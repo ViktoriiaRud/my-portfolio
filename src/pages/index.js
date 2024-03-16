@@ -58,20 +58,20 @@ const docLink = {
 
 const links = [
   {
-    text: 'Project Vakansiia',
-    url: 'https://project-gatsby-nine.vercel.app',
+    text: 'Project-GEN-B',
+    url: 'https://project-gen-b.vercel.app',
     description: '',
     color: '#EDEB35',
   },
   {
-    text: 'Restaraunt',
-    url: 'https://restaraunt-9e6fybg6g-rudnevaviktoriia1-gmailcom.vercel.app/',
+    text: 'Restaurant',
+    url: 'https://restaraunt-seven.vercel.app',
     description: "",
     color: '#EDEB35',
   },
   {
     text: 'Trip',
-    url: 'https://trip-mu.vercel.app/',
+    url: 'https://trip-mu.vercel.app',
     description: "",
     color: '#EDEB35',
   },
@@ -95,7 +95,7 @@ const IndexPage = () => {
           <span style={headingAccentStyles}>
            I am a dedicated and aspiring Front-end Developer with one year
 of professional experience at For Better Future Software House. I
-am pro cient in developing web pages and online stores,
+am pro client in developing web pages and online stores,
 specializing in React and utilizing additional technologies such as
 Typescript and Gatsby to enhance project functionality.
 Demonstrated versatility by successfully creating an online store
@@ -148,7 +148,7 @@ effectively to dynamic development projects.
         </p>
         <ul style={listStyles}>
           <li style={docLinkStyle}>
-        <h3>My project</h3>
+        <h3>My projects</h3>
           </li>
           {links.map(link => (
               <li key={link.url} style={{...listItemStyles, color: link.color}}>
