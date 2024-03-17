@@ -9,7 +9,20 @@
   },
   "dependencies": {
     "gatsby": "^5.0.0",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-styled-components": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "html-react-parser": "^5.1.8",
+    "plop": "^4.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sanitize-html": "^2.12.1",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "typescript": "^5.4.2"
   }
 }
