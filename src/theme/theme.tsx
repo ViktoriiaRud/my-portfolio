@@ -1,0 +1,41 @@
+export const theme = {
+    font1: 'RocGrotesk',
+    font2: 'Avenir',
+    fontSize: '16px',
+    wrapperXxs: '328px',
+    wrapperXll: '546px',
+    wrapperXs: '921px',
+    wrapper: '1110px',
+    wrapperLg: '1240px',
+    wrapperLgx: '1254px',
+    wrapperXl: '1368px',
+    wrapperXxl: '1440px',
+    wrapperXx: '1920px',
+    wrapperXxx: '2670px',
+    colors: {
+        transparent: 'transparent',
+        black: '#000000',
+        white: '#FFFFFF',
+        blue: '#2770F0',
+        gray: '#E9EAEA',
+        lightblue: '#B6D1FF',
+    },
+
+    gap: {
+        xxs: '4px',
+        xs: '8px',
+        sm: '16px',
+        smd: '24px',
+        md: '32px',
+        mdm: '40px',
+        mdl: '36px',
+        mdx: '52px',
+        lg: '64px',
+        xl: '72px',
+        xxl: '128px',
+    },
+
+    divider: {
+        top: 'inset 0px 1px 0px #d9dadd',
+    },
+} as const;
