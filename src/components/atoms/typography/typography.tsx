@@ -1,9 +1,9 @@
 import React from 'react';
-import { CustomThemeColorType } from 'theme/styled.d';
 
 import RichText from '../rich-text';
 
 import { StyledTypography } from './typography.styles';
+import {CustomThemeColorType} from "../../../theme/styled";
 
 export type TypographyVariantType =
   | 'title'

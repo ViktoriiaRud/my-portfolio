@@ -10,7 +10,7 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
   strong {
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    text-decoration-color: ${({ theme }) => theme.colors.blue};
+    text-decoration-color: ${({ theme }) => theme.colors.rosybrownDark};
   }
 
   &[data-variant='title'],

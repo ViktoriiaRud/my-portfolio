@@ -3,6 +3,7 @@ import {ThemeProvider} from 'styled-components'
 
 import GlobalStyle from "../../theme/globalStyles";
 import {theme} from "../../theme";
+import '../../theme/fonts/fonts.css';
 
 
 type LayoutType = {};

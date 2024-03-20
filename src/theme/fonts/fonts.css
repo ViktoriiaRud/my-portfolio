@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Limelight;
+    font-style: normal;
+    font-weight: 800;
+    src: url('Limelight/Limelight/Limelight.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Limelight;
+    font-style: normal;
+    font-weight: 400;
+    src: url('Limelight/Limelight-Regular/Limelight-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: KbLimelight;
+    font-style: normal;
+    font-weight: 300;
+    src: url('Limelight/KBLimeLight/KBLimeLight.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Sassoon-Infant-Std;
+    font-style: normal;
+    font-weight: 500;
+    src: url('Sassoon-Infant-Std-Bold/Sassoon-Infant-Std-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Sassoon-Infant-Std;
+    font-style: normal;
+    font-weight: 400;
+    src: url('Sassoon-Infant-Std/Sassoon-Infant-Std.woff2') format('woff2');
+    font-display: swap;
+}

@@ -1,6 +1,7 @@
 export const theme = {
-    font1: 'RocGrotesk',
-    font2: 'Avenir',
+    font1: 'Limelight',
+    font2: 'KbLimelight',
+    font3: 'Sassoon-Infant-Std',
     fontSize: '16px',
     wrapperXxs: '328px',
     wrapperXll: '546px',
@@ -16,9 +17,11 @@ export const theme = {
         transparent: 'transparent',
         black: '#000000',
         white: '#FFFFFF',
-        blue: '#2770F0',
-        gray: '#E9EAEA',
-        lightblue: '#B6D1FF',
+        lightgray: '#CABEC5',
+        gray: '#575757',
+        rosybrown: '#C54B73',
+        rosybrownDark: '#8C2C61',
+        lightpink: '#FCDEEF',
     },
 
     gap: {

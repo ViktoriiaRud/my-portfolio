@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from "../../atoms/container";
+import Typography from "../../atoms/typography";
 
 import {
     StyledWrapperAboutClient,
@@ -8,7 +9,8 @@ import {
     TypographyDescription,
     TypographySubtitle,
     TypographyTitle,
-   WrapperAboutClient
+   WrapperAboutClient,
+    TypographySubtitleKb,
 } from "./about-me.styles";
 import {Link} from "gatsby";
 
@@ -22,13 +24,13 @@ const AboutMe = ({subtitle, titleAboutMe, altText, title, url, srcImage, descrip
             <Container>
                 <StyledWrapperAboutClient>
                     <StyledWrapperTitle>
-                        <TypographySubtitle html={subtitle} variant="title3"/>
+                        <TypographySubtitle html={subtitle} variant="title" color={'rosybrownDark'}/>
                         <TypographyTitle html={title} variant="title1"/>
                         <TypographyDescription html={description} variant="body2"/>
                         <Link to={url}>
                             <h3>{titleAboutMe}</h3>
                         </Link>
-                        <TypographySubtitle html={'My projects'} variant="title5" color={'blue'}/>
+                        <TypographySubtitleKb html={'My projects'} variant="title5" color={'rosybrown'}/>
                         <ul>
                             <li> <Link to={'https://project-gen-b.vercel.app'}>
                                 <h3>Project-GEN-B</h3>
@@ -49,7 +51,7 @@ const AboutMe = ({subtitle, titleAboutMe, altText, title, url, srcImage, descrip
                 </StyledWrapperAboutClient>
 
                 <TypographySubtitle>Work Experience</TypographySubtitle>
-                <h3>For Better Future Soft House</h3>
+                <Typography html={'For Better Future Soft House'} variant={'title2'}/>
                 <h4>( February 2023 - Present )</h4>
                 <p>
                     I specialize in React and work on web pages and online stores.

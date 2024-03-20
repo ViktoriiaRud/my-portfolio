@@ -52,8 +52,7 @@ export const StyledWrapperContact = styled.div`
 `;
 
 export const TypographySubtitle = styled(Typography)`
-  font-family: ${({ theme }) => theme.font2};
-  text-transform: uppercase;
+  font-family: ${({ theme }) => theme.font3};
 `;
 
 export const TypographyTitle = styled(Typography)`
@@ -64,7 +63,13 @@ export const TypographyTitle = styled(Typography)`
 `;
 
 export const TypographyDescription = styled(Typography)`
-  font-family: ${({ theme }) => theme.font2};
+  font-family: ${({ theme }) => theme.font3};
   margin-top: 25px;
   max-width: 689px;
+`;
+
+export const TypographySubtitleKb = styled(Typography)`
+  font-family: ${({ theme }) => theme.font2};
+  margin-top: 25px;
+  line-height: 42px;
 `;
