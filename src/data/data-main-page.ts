@@ -1,4 +1,8 @@
 import myImage from '../assets/image/myPhoto.png';
+import ProjectImg1 from '../assets/image/pexels-pixabay-416405.jpg';
+import ProjectImg2 from '../assets/image/pexels-fauxels-3183153.jpg';
+import ProjectImg3 from '../assets/image/pexels-canva-studio-3194521.jpg';
+
 export const dataAboutMe: {
     titleAboutMe: string;
     srcImage: {};
@@ -27,3 +31,48 @@ export const dataAboutMe: {
     altText: 'Front-end Developer Viktoriia Rudneva',
 };
 
+export const dataProjectCard: {
+    contentCard: {
+        cards: ({
+            srcImage: {};
+            titleButton: string;
+            altText: string;
+            hrefButton: string;
+            name: string;
+            description: string;
+            title: string
+        })[]
+    }
+} = {
+    contentCard: {
+        cards: [
+            {
+                name: 'Project-GEN-B',
+                title: 'Project-GEN-B',
+                description: "I used CSS, StyledComponents, React, TypeScript, and Gatsby. ",
+                titleButton: 'read more',
+                hrefButton: 'https://project-gen-b.vercel.app',
+                srcImage: ProjectImg1,
+                altText: 'Project-GEN-B',
+            },
+            {
+                name: 'Restaurant',
+                title: 'Restaurant',
+                description: "I used CSS, StyledComponents, React, TypeScript, and Gatsby",
+                titleButton: 'read more',
+                hrefButton: 'https://restaraunt-seven.vercel.app',
+                srcImage: ProjectImg2,
+                altText: 'Restaurant',
+            },
+            {
+                name: 'Trip',
+                title: 'Trip',
+                description: "I used CSS, StyledComponents, React",
+                titleButton: 'read more',
+                hrefButton: 'https://trip-mu.vercel.app',
+                srcImage: ProjectImg3,
+                altText: 'Trip',
+            },
+        ],
+    },
+};

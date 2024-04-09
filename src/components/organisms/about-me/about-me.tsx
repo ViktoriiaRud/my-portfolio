@@ -10,7 +10,6 @@ import {
     TypographySubtitle,
     TypographyTitle,
    WrapperAboutClient,
-    TypographySubtitleKb,
 } from "./about-me.styles";
 import {Link} from "gatsby";
 
@@ -30,20 +29,6 @@ const AboutMe = ({subtitle, titleAboutMe, altText, title, url, srcImage, descrip
                         <Link to={url}>
                             <h3>{titleAboutMe}</h3>
                         </Link>
-                        <TypographySubtitleKb html={'My projects'} variant="title5" color={'rosybrown'}/>
-                        <ul>
-                            <li> <Link to={'https://project-gen-b.vercel.app'}>
-                                <h3>Project-GEN-B</h3>
-                            </Link></li>
-                            <li><Link to={'https://restaraunt-seven.vercel.app'}>
-                                <h3>Restaurant</h3>
-                            </Link></li>
-                            <li>
-                                <Link to={'https://trip-mu.vercel.app'}>
-                                    <h3>Trip</h3>
-                                </Link>
-                            </li>
-                        </ul>
                     </StyledWrapperTitle>
                     <StyledWrapperContact>
                         <img src={srcImage} alt={altText}/>

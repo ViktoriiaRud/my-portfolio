@@ -47,15 +47,14 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
     letter-spacing: 0.2em;
   }
 
-  &[data-variant='title5'] {
+  &[data-variant='title_5'] {
     font-size: 20px;
     font-weight: 500;
   }
 
-  &[data-variant='title6'],
+  &[data-variant='title_6'],
   &[data-variant='title06'] {
     font-size: 15px;
-    line-height: 18px;
     font-weight: 800;
     letter-spacing: 0;
   }
