@@ -5,7 +5,7 @@ import Typography from "../../atoms/typography";
 
 export const WrapperAboutClient = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.white};
+  background: linear-gradient(to right, #FFFFFF, #8C2C61);
 `;
 
 export const StyledWrapperAboutClient = styled.div`
@@ -43,10 +43,15 @@ export const StyledWrapperContact = styled.div`
   width: 100%;
   text-align: center;
   margin: 50px 0 50px;
+  img {
+    height: 540px;
+    width: 100%;
+    object-fit: cover;
+  }
 
   ${breakpoint.md} {
     margin: 120px 0 110px;
-    width: 30%;
+    width: 40%;
     text-align: start;
   }
 `;

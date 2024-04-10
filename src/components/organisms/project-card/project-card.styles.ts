@@ -6,6 +6,7 @@ import Typography from '../../atoms/typography';
 export const WrapperProjectCard = styled.div`
   width: 100%;
   height: 100%;
+  min-height: 680px;
   background-color: ${({ theme }) => theme.colors.lightgray};
 `;
 export const StyledWrapperCard = styled.div`
@@ -39,14 +40,18 @@ export const StyledContainerCard = styled.div`
 `;
 
 export const Card = styled.div`
-  max-width: 295px;
-  min-height: 295px;
+  max-width: 360px;
+  min-height: 360px;
   width: 100%;
   height: 100%;
 `;
 
 
 export const StyledContentFront = styled.div`
+  max-width: 360px;
+  min-height: 360px;
+  width: 100%;
+  height: 100%;
   padding: 35px 30px 60px 30px;
   background-color: ${({ theme }) => theme.colors.white};
   transition-property: background-color;
@@ -55,8 +60,8 @@ export const StyledContentFront = styled.div`
 `;
 
 export const StyledContentBack = styled.div`
-  max-width: 295px;
-  max-height: 295px;
+  max-width: 360px;
+  max-height: 360px;
   width: 100%;
   height: 100%;
   transition-property: background-color;
@@ -68,9 +73,6 @@ export const StyledContentText = styled.div`
   max-width: 144px;
 `;
 
-export const StyledWrapperIcon = styled.div`
-  margin: 0 auto;
-`;
 
 export const TypographyTitleFront = styled(Typography)`
   font-family: ${({ theme }) => theme.font1};
@@ -88,13 +90,13 @@ export const TypographyTitleDescription = styled(Typography)`
 `;
 
 export const StyledImgCard = styled.div`
-  max-width: 295px;
+  max-width: 360px;
   width: 100%;
   height: 100%;
 
   img {
-    width: 295px;
-    height: 295px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
     position: absolute;
   }

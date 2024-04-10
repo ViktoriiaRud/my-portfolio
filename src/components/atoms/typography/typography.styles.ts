@@ -14,14 +14,14 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
   }
 
   &[data-variant='title'],
-  &[data-variant='title2'] {
+  &[data-variant='title_2'] {
     font-size: 42px;
     font-weight: 400;
     line-height: 52px;
     letter-spacing: 0;
   }
 
-  &[data-variant='title1'] {
+  &[data-variant='title_1'] {
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0;
@@ -33,8 +33,9 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
     letter-spacing: 0;
   }
 
-  &[data-variant='title2'] {
-    font-size: 28px;
+  &[data-variant='title_2'] {
+    font-size: 26px;
+      line-height: 36px;
   }
 
   &[data-variant='title3'],

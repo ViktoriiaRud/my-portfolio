@@ -22,6 +22,7 @@ export const theme = {
         rosybrown: '#C54B73',
         rosybrownDark: '#8C2C61',
         lightpink: '#FCDEEF',
+        backgroundPink: '#F7EDF4',
     },
 
     gap: {
