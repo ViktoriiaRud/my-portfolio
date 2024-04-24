@@ -7,7 +7,7 @@ export const WrapperProjectCard = styled.div`
   width: 100%;
   height: 100%;
   min-height: 680px;
-  background-color: ${({ theme }) => theme.colors.lightgray};
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 export const StyledWrapperCard = styled.div`
   max-width: 1256px;
@@ -30,6 +30,7 @@ export const StyledContainerCard = styled.div`
   }
 
   ${breakpoint.lg} {
+    flex-wrap: unset;
     gap: 25px;
     justify-content: space-around;
   }
@@ -40,28 +41,28 @@ export const StyledContainerCard = styled.div`
 `;
 
 export const Card = styled.div`
-  max-width: 360px;
-  min-height: 360px;
+  max-width: 396px;
+  min-height: 300px;
   width: 100%;
   height: 100%;
 `;
 
 
 export const StyledContentFront = styled.div`
-  max-width: 360px;
-  min-height: 360px;
+  max-width: 396px;
+  min-height: 300px;
   width: 100%;
   height: 100%;
   padding: 35px 30px 60px 30px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.lightgray};
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: ease;
 `;
 
 export const StyledContentBack = styled.div`
-  max-width: 360px;
-  max-height: 360px;
+  max-width: 396px;
+  max-height: 300px;
   width: 100%;
   height: 100%;
   transition-property: background-color;
@@ -90,13 +91,14 @@ export const TypographyTitleDescription = styled(Typography)`
 `;
 
 export const StyledImgCard = styled.div`
-  max-width: 360px;
+  max-width: 396px;
   width: 100%;
   height: 100%;
 
   img {
-    width: 360px;
-    height: 360px;
+    max-width: 396px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     position: absolute;
   }

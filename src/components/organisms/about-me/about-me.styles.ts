@@ -43,6 +43,7 @@ export const StyledWrapperContact = styled.div`
   width: 100%;
   text-align: center;
   margin: 50px 0 50px;
+  
   img {
     height: 540px;
     width: 100%;
@@ -73,8 +74,15 @@ export const TypographyDescription = styled(Typography)`
   max-width: 689px;
 `;
 
-export const TypographySubtitleKb = styled(Typography)`
-  font-family: ${({ theme }) => theme.font2};
-  margin-top: 25px;
-  line-height: 42px;
+export const StyledLinkAboutMe = styled.div`
+  width: 100px;
+  min-height: 30px;
+  background-color: ${({ theme }) => theme.colors.rosybrown};
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+  
+  &:hover {
+    color: ${({ theme }) => theme.colors.white};
+  }
 `;

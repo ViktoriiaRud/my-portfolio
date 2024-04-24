@@ -1,7 +1,7 @@
 import myImage from '../assets/image/myPhoto.png';
-import ProjectImg1 from '../assets/image/pexels-pixabay-416405.jpg';
-import ProjectImg2 from '../assets/image/pexels-fauxels-3183153.jpg';
-import ProjectImg3 from '../assets/image/pexels-canva-studio-3194521.jpg';
+import ProjectImg1 from '../assets/image/project3.png';
+import ProjectImg2 from '../assets/image/project2.png';
+import ProjectImg3 from '../assets/image/project1.png';
 
 export const dataAboutMe: {
     titleAboutMe: string;
@@ -10,7 +10,7 @@ export const dataAboutMe: {
     subtitle: string;
     description: string;
     title: string;
-    url: string
+    url: string;
 } = {
     subtitle: 'My name is Viktoriia Rudneva',
     description: 'I am a dedicated and aspiring Front-end Developer with one year\n' +
@@ -40,7 +40,7 @@ export const dataProjectCard: {
             hrefButton: string;
             name: string;
             description: string;
-            title: string
+            title: string;
         })[]
     }
 } = {
