@@ -19,6 +19,8 @@ export const theme = {
         white: '#FFFFFF',
         lightgray: '#CABEC5',
         gray: '#575757',
+        gray2: '#C2C4BF',
+        gray3: '#ADADAD',
         rosybrown: '#C54B73',
         rosybrownDark: '#8C2C61',
         lightpink: '#FCDEEF',

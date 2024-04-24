@@ -4,6 +4,10 @@ import {ThemeProvider} from 'styled-components'
 import GlobalStyle from "../../theme/globalStyles";
 import {theme} from "../../theme";
 import '../../theme/fonts/fonts.css';
+import Footer from "../organisms/footer";
+import MyHeader from "../organisms/my-header";
+import {dataFooterCopyright} from "../../data/data-footer";
+import {dataHeader} from "../../data/data-header";
 
 
 type LayoutType = {};
@@ -11,7 +15,9 @@ type LayoutType = {};
 const Layout = ({ children }: React.PropsWithChildren<LayoutType>) => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <MyHeader {...dataHeader}/>
         <main>{children}</main>
+        <Footer {...dataFooterCopyright}/>
     </ThemeProvider>
 );
 

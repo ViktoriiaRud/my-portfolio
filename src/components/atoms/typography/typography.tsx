@@ -7,12 +7,14 @@ import {CustomThemeColorType} from "../../../theme/styled";
 
 export type TypographyVariantType =
   | 'title'
-  | 'title1'
-  | 'title2'
-  | 'title3'
-  | 'title4'
-  | 'title5'
-  | 'title6'
+  | 'title_1'
+  | 'title_2'
+  | 'title_3'
+  | 'title_4'
+  | 'title_5'
+  | 'title_6'
+  | 'title06'
+  | 'title_7'
   | 'title7'
   | 'title8'
   | 'title9'
@@ -29,7 +31,6 @@ export type TypographyVariantType =
   | 'body5'
   | 'body6'
   | 'body7'
-  | 'title06'
   | 'body8'
   | 'body9'
   | 'body10';

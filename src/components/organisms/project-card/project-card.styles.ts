@@ -109,6 +109,6 @@ export const StyledButtonWidth = styled.div`
 `;
 
 export const TypographySubtitleKb = styled(Typography)`
-  padding-top: 60px;
+  padding-top: 100px;
   font-family: ${({ theme }) => theme.font3};
 `;

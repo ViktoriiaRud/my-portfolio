@@ -25,7 +25,7 @@ const ProjectCard = ({contentCard}:ProjectCardType) => {
     return (
         <WrapperProjectCard>
             <Container>
-                <TypographySubtitleKb html={'My projects'} variant="title15" color={'rosybrownDark'}/>
+                <TypographySubtitleKb html={'My projects'} variant="title_3" color={'rosybrownDark'}/>
                 <StyledWrapperCard>
                     <StyledContainerCard>
                         {contentCard.cards
