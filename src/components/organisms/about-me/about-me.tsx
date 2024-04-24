@@ -14,6 +14,7 @@ import {
 import {Link} from "gatsby";
 
 
+
 export type AboutMeType = {
 };
 
