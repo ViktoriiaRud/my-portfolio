@@ -14,7 +14,8 @@ import {
     TypographyTitleDescription,
     TypographyTitleFront,
     WrapperProjectCard,
-    TypographySubtitleKb
+    TypographySubtitleKb,
+    TypographyTitle,
 } from './project-card.styles';
 
 import {StyledWrapperButton} from "../../atoms/button/button.styles";
@@ -25,6 +26,7 @@ const ProjectCard = ({contentCard}:ProjectCardType) => {
     return (
         <WrapperProjectCard>
             <Container>
+                <TypographyTitle html={'Portfolio'} variant="title_2"/>
                 <TypographySubtitleKb html={'My projects'} variant="title_3" color={'rosybrownDark'}/>
                 <StyledWrapperCard>
                     <StyledContainerCard>

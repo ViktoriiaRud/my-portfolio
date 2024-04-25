@@ -6,50 +6,53 @@ import {
     TypographySubtitle,
     TypographyDescription,
     TypographyData,
+    TypographyTitle,
+    StyledWrapperHow,
+    StyledWrapperHowImage,
 } from './experience.styles';
 import Container from "../../atoms/container";
 
+import {ExperienceType} from "../../../types/components";
 
-export type ExperienceType = {};
-
-const Experience = ({}: ExperienceType) => {
+const Experience = ({title, subTitle, srcImage, altText, subtitle2, subtitle4, subtitle5, subtitle6, subtitle7, subtitle8, subtitle9, subtitle3, subtitle10, subtitle12, subtitle13, subtitle11, subtitle14, subtitle15, subtitle16, subtitle17}: ExperienceType) => {
     return <>
         <Container>
             <StyledWrapperExperience>
-                <TypographySubtitleExp html={'Work Experience'} variant="title_3" color={'rosybrownDark'}/>
-                <TypographySubtitle html={'For Better Future Soft House'} variant={'title_5'}/>
-                <TypographyData html={'( February 2023 - Present )'} variant={'title_4'}/>
-                <TypographyDescription variant={'title_7'}>
-                    I specialize in React and work on web pages and online stores.
-                    <br/>
-                    I used design Figma.
-                    <br/>
-                    Online store project.
-                    <br/>
-                    I used Magento 2, HTML, Less I did footer, blog, changed styles,
-                    changed photos, added products to the store using les csv
-                    <TypographyData html={'( 02/2023-05/2023 )'} variant={'title_4'}/>
-                    Project Recruitment website
-                    I used React, TypeScript. Created icon components.
-                    <TypographyData html={'( 05/2023- 06/2023 )'} variant={'title_4'}/>
-                    Project IT Company website
-                    I used CSS, StyledComponents, React, TypeScript, and Gatsby. I
-                    made components and styles. I created a footer, banner, header,
-                    button, tooltip menu, drop down menu, ipping cards, carousel
-                    slider, and carousel with reviews. Also, I created basic components,
-                    such as a container and theme.
-                    <TypographyData html={'( 06/2023...)'} variant={'title_4'}/>
-                    <br/>
-                    <br/>
-                </TypographyDescription>
-                <TypographySubtitle html={'For Better Future Soft House'} variant={'title_5'}/>
-                <TypographyData html={'( October 2022 - February 2023 )'} variant={'title_4'}/>
-                <TypographyDescription>
-                    Project: “Trip’’ (Landing Page) (10/2022 - 12/2022)
-                    <br/>
-                    Project: “Restaurant’’ (Landing Page) (12/2022 - 2/2023)
-                    <br/>
-                    I used technology: CSS, StyledComponents, React, TypeScript</TypographyDescription>
+                    <StyledWrapperHow>
+                        <TypographyTitle html={title} variant="title_2"/>
+                        <TypographySubtitleExp html={subTitle} variant="title_3" color={'rosybrownDark'}/>
+                        <TypographySubtitle html={subtitle2} variant={'title_5'}/>
+                        <TypographyData html={subtitle3} variant={'title_4'}/>
+                        <TypographyDescription variant={'title_7'}>
+                            {subtitle4}
+                            <br/>
+                            {subtitle5}
+                            <br/>
+                            {subtitle6}
+                            <br/>
+                            {subtitle7}
+                            <TypographyData html={subtitle8} variant={'title_4'}/>
+                            {subtitle9}
+                            <TypographyData html={subtitle10} variant={'title_4'}/>
+                            {subtitle11}
+                            <TypographyData html={subtitle12} variant={'title_4'}/>
+                            <br/>
+                            <br/>
+                        </TypographyDescription>
+                        <TypographySubtitle html={subtitle13} variant={'title_5'}/>
+                        <TypographyData html={subtitle14} variant={'title_4'}/>
+                        <TypographyDescription>
+                            {subtitle15}
+                            <br/>
+                            {subtitle16}
+                            <br/>
+                            {subtitle17}
+                        </TypographyDescription>
+                    </StyledWrapperHow>
+                    <StyledWrapperHowImage>
+                        <img src={srcImage} alt={altText}/>
+                    </StyledWrapperHowImage>
+
             </StyledWrapperExperience>
         </Container>
     </>

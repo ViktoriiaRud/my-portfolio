@@ -4,6 +4,7 @@ import AboutMe from "../components/organisms/about-me";
 import {dataAboutMe, dataProjectCard} from "../data/data-main-page";
 import ProjectCard from "../components/organisms/project-card";
 import Experience from "../components/organisms/experience";
+import {dataExperience} from "../data/data-page";
 
 
 const IndexPage = () => {
@@ -11,7 +12,7 @@ const IndexPage = () => {
         <Layout>
             <AboutMe {...dataAboutMe}/>
             <ProjectCard {...dataProjectCard}/>
-            <Experience/>
+            <Experience {...dataExperience}/>
         </Layout>
     );
 };
