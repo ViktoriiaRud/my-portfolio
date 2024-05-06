@@ -3,11 +3,13 @@ import React from 'react';
 import {
     StyledColorHeader,
     StyledWrapperHeader,
-    StyledLogo,
+    StyledLogo, StyledDropdownMenuDesktop, StyledDropdownMenuMobile,
 } from './my-header.styles';
 import Container from "../../atoms/container";
 import {Link} from "gatsby";
-import {dataHeader} from "../../../data/data-header";
+import {dataDropdownMenu, dataHeader} from "../../../data/data-header";
+import DropdownMenu from "../../molecules/dropdown-menu";
+import MyHamburgerMenu from "../../molecules/hamburger";
 
 export type MyHeaderType = {
     srcImage?: string;
@@ -23,6 +25,14 @@ const MyHeader = () => {
                     <StyledLogo>
                         <Link to={dataHeader.url}/>
                         <img src={dataHeader.srcImage} alt={dataHeader.altText}/>
+                        <nav>
+                            <StyledDropdownMenuDesktop>
+                                <DropdownMenu {...dataDropdownMenu} />
+                            </StyledDropdownMenuDesktop>
+                            <StyledDropdownMenuMobile>
+                                <MyHamburgerMenu dataDropdownMenu={dataDropdownMenu}/>
+                            </StyledDropdownMenuMobile>
+                        </nav>
                     </StyledLogo>
                 </StyledWrapperHeader>
             </Container>

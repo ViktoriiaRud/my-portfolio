@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {breakpoint} from "../../../theme";
 
 export const StyledColorHeader = styled.div`
     width: 100%;
@@ -14,8 +15,27 @@ export const StyledLogo = styled.div`
     display: flex;
     justify-content: start;
     align-items: center;
+  
     img {
         width: 70px;
         height: 70px;
+      margin-left: -80px;
     }
+`;
+
+export const StyledDropdownMenuDesktop = styled.div`
+  display: none;
+
+  ${breakpoint.lg} {
+    display: block;
+    margin-left: 120px;
+  }
+`;
+
+export const StyledDropdownMenuMobile = styled.div`
+  display: block;
+
+  ${breakpoint.lg} {
+    display: none;
+  }
 `;
