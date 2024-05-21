@@ -5,7 +5,7 @@ import Typography from "../../atoms/typography";
 
 export const WrapperAboutClient = styled.div`
   width: 100%;
-  background: linear-gradient(to right, #FFFFFF, #8C2C61);
+  background: linear-gradient(to right, #999BF4, #2D247F);
 `;
 
 export const StyledWrapperAboutClient = styled.div`
@@ -77,7 +77,7 @@ export const TypographyDescription = styled(Typography)`
 export const StyledLinkAboutMe = styled.div`
   width: 100px;
   min-height: 30px;
-  background-color: ${({ theme }) => theme.colors.rosybrown};
+  background-color: ${({ theme }) => theme.colors.greenyellow};
   text-align: center;
   align-items: center;
   padding-top: 5px;

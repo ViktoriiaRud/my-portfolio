@@ -42,7 +42,6 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
         font-size: 12px;
         font-weight: 300;
         letter-spacing: 0.2em;
-        color: #575757;
     }
 
     &[data-variant='title_5'] {

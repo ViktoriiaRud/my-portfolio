@@ -23,19 +23,10 @@ export const StyledLogo = styled.div`
     }
 `;
 
-export const StyledDropdownMenuDesktop = styled.div`
+export const StyledDropdownMenuMobile = styled.div`
   display: none;
 
   ${breakpoint.lg} {
     display: block;
-    margin-left: 120px;
-  }
-`;
-
-export const StyledDropdownMenuMobile = styled.div`
-  display: block;
-
-  ${breakpoint.lg} {
-    display: none;
   }
 `;

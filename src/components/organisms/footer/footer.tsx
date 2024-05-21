@@ -1,17 +1,19 @@
 import React from 'react';
 
 
-import { StylesWrapperFooter } from './footer.styles';
+import {StylesWrapperFooter} from './footer.styles';
 import Container from "../../atoms/container";
 import FooterCopyright from "../../molecules/footer-copyright";
 import {dataFooterCopyright} from "../../../data/data-footer";
+import {StyledSpanCopyright} from "../../molecules/footer-copyright/footer-copyright.styles";
 
 const Footer = () => (
-  <Container>
     <StylesWrapperFooter>
+        <StyledSpanCopyright/>
+        <Container>
+            <FooterCopyright {...dataFooterCopyright} />
+        </Container>
     </StylesWrapperFooter>
-    <FooterCopyright {...dataFooterCopyright} />
-  </Container>
 );
 
 export default Footer;

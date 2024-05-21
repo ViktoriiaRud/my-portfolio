@@ -24,7 +24,7 @@ const AboutMe = ({subtitle, titleAboutMe, altText, title, url, srcImage, descrip
             <Container>
                 <StyledWrapperAboutClient>
                     <StyledWrapperTitle>
-                        <TypographySubtitle html={subtitle} variant="title" color={'rosybrownDark'}/>
+                        <TypographySubtitle html={subtitle} variant="title" color={'greenyellow'}/>
                         <TypographyTitle html={title} variant="title_1"/>
                         <TypographyDescription html={description} variant="title_2"/>
                         <StyledLinkAboutMe>

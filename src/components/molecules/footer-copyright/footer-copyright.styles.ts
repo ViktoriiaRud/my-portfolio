@@ -59,7 +59,7 @@ export const StyledPortfolio = styled.div`
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: ${({ theme }) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.colors.lightgray};
     position: absolute;
     margin-left: -18px;
     top: 20%;

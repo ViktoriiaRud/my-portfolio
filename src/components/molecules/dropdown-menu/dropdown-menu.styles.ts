@@ -4,7 +4,6 @@ import { breakpoint } from '../../../theme';
 import Typography from '../../atoms/typography';
 
 export const WrapperDropdownMenu = styled.div`
-  display: none;
   ${breakpoint.lg} {
     display: block;
   }
@@ -41,9 +40,27 @@ export const TypographyLink = styled(Typography)`
 export const StyledContentDropdown = styled.div`
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 96px;
+  flex-direction: column;
+  gap: 140px;
+
+  ${breakpoint.md} {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 490px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  ${breakpoint.lg} {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: unset;
+    flex-direction: row;
+    justify-content: center;
+    gap: 82px;
+  }
 `;
 
 export const StyledDropdownMenu = styled.ul`

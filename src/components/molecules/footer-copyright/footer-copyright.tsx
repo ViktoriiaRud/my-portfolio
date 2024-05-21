@@ -8,7 +8,6 @@ import {
     StyledDeveloper,
     StyledPolicy,
     StyledPolicyWrapper,
-    StyledSpanCopyright,
     StyledTypographyLeft,
     StyledTypographyRight,
     StyledName,
@@ -25,26 +24,25 @@ export type FooterCopyrightType = {
 
 const FooterCopyright = ({titlePortfolio, titleName, titlePrivacy, titleDeveloper, url}: FooterCopyrightType) => (
     <>
-        <StyledSpanCopyright/>
         <StyledCopyrightWrapper>
             <StyledDataWrapper>
                 <StyledDataYear>
-                    <StyledTypographyLeft variant={"title_4"}>{new Date().getFullYear()}</StyledTypographyLeft>
+                    <StyledTypographyLeft variant={"title_4"} color={'gray2'}>{new Date().getFullYear()}</StyledTypographyLeft>
                 </StyledDataYear>
                 <StyledPortfolio>
-                    <StyledTypographyLeft html={titlePortfolio} variant="title_4"/>
+                    <StyledTypographyLeft html={titlePortfolio} variant="title_4" color={'gray2'}/>
                 </StyledPortfolio>
                 <StyledDeveloper>
-                    <StyledTypographyLeft html={titleDeveloper} variant="title_4"/>
+                    <StyledTypographyLeft html={titleDeveloper} variant="title_4" color={'gray2'}/>
                 </StyledDeveloper>
                 <StyledName>
-                    <StyledTypographyLeft html={titleName} variant="title_4"/>
+                    <StyledTypographyLeft html={titleName} variant="title_4" color={'gray2'}/>
                 </StyledName>
             </StyledDataWrapper>
             <StyledPolicyWrapper>
                 <StyledPolicy>
                     <Link to={url}>
-                        <StyledTypographyRight html={titlePrivacy} variant="title_4"/>
+                        <StyledTypographyRight html={titlePrivacy} variant="title_4" color={'gray2'}/>
                     </Link>
                 </StyledPolicy>
             </StyledPolicyWrapper>

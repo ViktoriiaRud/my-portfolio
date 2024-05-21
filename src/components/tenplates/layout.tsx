@@ -6,7 +6,6 @@ import {theme} from "../../theme";
 import '../../theme/fonts/fonts.css';
 import Footer from "../organisms/footer";
 import MyHeader from "../organisms/my-header";
-import {dataFooterCopyright} from "../../data/data-footer";
 import {dataHeader} from "../../data/data-header";
 
 
@@ -17,7 +16,7 @@ const Layout = ({ children }: React.PropsWithChildren<LayoutType>) => (
         <GlobalStyle />
         <MyHeader {...dataHeader}/>
         <main>{children}</main>
-        <Footer {...dataFooterCopyright}/>
+        <Footer/>
     </ThemeProvider>
 );
 

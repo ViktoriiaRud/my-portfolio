@@ -1,15 +1,19 @@
 import React from 'react';
 
+import DropdownMenu from "../../molecules/dropdown-menu";
+
 import {
     StyledColorHeader,
     StyledWrapperHeader,
-    StyledLogo, StyledDropdownMenuDesktop, StyledDropdownMenuMobile,
+    StyledLogo,
+    StyledDropdownMenuMobile,
 } from './my-header.styles';
 import Container from "../../atoms/container";
 import {Link} from "gatsby";
-import {dataDropdownMenu, dataHeader} from "../../../data/data-header";
-import DropdownMenu from "../../molecules/dropdown-menu";
-import MyHamburgerMenu from "../../molecules/hamburger";
+import {
+    dataDropdownMenu,
+    dataHeader,
+} from "../../../data/data-header";
 
 export type MyHeaderType = {
     srcImage?: string;
@@ -26,11 +30,8 @@ const MyHeader = () => {
                         <Link to={dataHeader.url}/>
                         <img src={dataHeader.srcImage} alt={dataHeader.altText}/>
                         <nav>
-                            <StyledDropdownMenuDesktop>
-                                <DropdownMenu {...dataDropdownMenu} />
-                            </StyledDropdownMenuDesktop>
                             <StyledDropdownMenuMobile>
-                                <MyHamburgerMenu dataDropdownMenu={dataDropdownMenu}/>
+                                <DropdownMenu {...dataDropdownMenu}/>
                             </StyledDropdownMenuMobile>
                         </nav>
                     </StyledLogo>

@@ -23,8 +23,12 @@ export const theme = {
         gray3: '#ADADAD',
         rosybrown: '#C54B73',
         rosybrownDark: '#8C2C61',
+        blueDark: '#2D247F',
         lightpink: '#FCDEEF',
         backgroundPink: '#F7EDF4',
+        greenyellow: '#C2EC22',
+        yellow: '#E1D614',
+        lightblue: '#999BF4',
     },
 
     gap: {
