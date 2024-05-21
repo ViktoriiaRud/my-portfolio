@@ -5,7 +5,7 @@ import Typography from "../../atoms/typography";
 
 export const WrapperAboutClient = styled.div`
   width: 100%;
-  background: linear-gradient(to right, #999BF4, #2D247F);
+  background: linear-gradient(to right, #B5C3F2, #1C2C7D);
 `;
 
 export const StyledWrapperAboutClient = styled.div`
