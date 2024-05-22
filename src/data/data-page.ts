@@ -1,4 +1,4 @@
-import {ExperienceType} from "../types/components";
+import {ButtonDoubleBlueType, ExperienceType} from "../types/components";
 import ImgExperience from '../assets/image/pexels-mizunokozuki-12899196.jpg';
 
 export const dataExperience: ExperienceType = {
@@ -35,3 +35,9 @@ export const dataExperience: ExperienceType = {
     subtitle17: 'I used technology: CSS, StyledComponents, React, TypeScript',
 }
 
+export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
+    hrefButtonOne: '/#about-me',
+    titleButtonOne: 'About-me',
+    hrefButtonTwo: '/#portfolio',
+    titleButtonTwo: 'Portfolio',
+}

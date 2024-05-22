@@ -8,14 +8,16 @@ export type ButtonPropsType = {
     | 'rosybrownDark'
     | 'lightpink'
     | 'gray'
-
+   | 'greenyellow'
+   | 'blue'
+   | 'transparent'
   size?: 'sm' | 'md' | 'lg';
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement>
   ) => void | React.MouseEventHandler<HTMLButtonElement>;
 } & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 const Button: React.FC<ButtonPropsType> = ({
-  variant = 'rosybrownDark',
+  variant = 'blue',
   size = 'sm',
   onClick,
   href,

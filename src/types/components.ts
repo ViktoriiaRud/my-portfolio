@@ -34,3 +34,10 @@ export type ExperienceType = {
     subtitle16: string;
     subtitle17: string;
 };
+
+export type ButtonDoubleBlueType = {
+    titleButtonOne: string;
+    hrefButtonOne: string;
+    titleButtonTwo: string;
+    hrefButtonTwo: string;
+};

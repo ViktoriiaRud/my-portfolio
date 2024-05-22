@@ -6,7 +6,7 @@ import {
     StyledColorHeader,
     StyledWrapperHeader,
     StyledLogo,
-    StyledDropdownMenuMobile,
+    StyledDropdownMenuMobile, StyledWrapperButton, StyledButtonWidth, StyledButtonNav
 } from './my-header.styles';
 import Container from "../../atoms/container";
 import {Link} from "gatsby";
@@ -15,10 +15,14 @@ import {
     dataHeader,
 } from "../../../data/data-header";
 
+import Button from "../../atoms/button";
+
 export type MyHeaderType = {
-    srcImage?: string;
+    srcImage?: {};
     altText: string;
     url: string;
+    urlAboutMe: string;
+    titleAboutMe: string;
 };
 
 const MyHeader = () => {
@@ -29,12 +33,19 @@ const MyHeader = () => {
                     <StyledLogo>
                         <Link to={dataHeader.url}/>
                         <img src={dataHeader.srcImage} alt={dataHeader.altText}/>
-                        <nav>
-                            <StyledDropdownMenuMobile>
-                                <DropdownMenu {...dataDropdownMenu}/>
-                            </StyledDropdownMenuMobile>
-                        </nav>
                     </StyledLogo>
+                    <StyledButtonNav>
+                        <nav>
+                          <DropdownMenu {...dataDropdownMenu}/>
+                        </nav>
+                        <div>
+                        <StyledButtonWidth>
+                                <Button variant="blue" size="sm" href={dataHeader.urlAboutMe}>
+                                    {dataHeader.titleAboutMe}
+                                </Button>
+                        </StyledButtonWidth>
+                        </div>
+                    </StyledButtonNav>
                 </StyledWrapperHeader>
             </Container>
         </StyledColorHeader>

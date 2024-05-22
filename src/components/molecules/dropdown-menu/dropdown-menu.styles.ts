@@ -4,9 +4,6 @@ import { breakpoint } from '../../../theme';
 import Typography from '../../atoms/typography';
 
 export const WrapperDropdownMenu = styled.div`
-  ${breakpoint.lg} {
-    display: block;
-  }
 `;
 
 export const StyledLi = styled.li`
@@ -21,7 +18,7 @@ export const TypographyLink = styled(Typography)`
   transition: all 0.09s linear 0s;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.rosybrownDark};
+    color: ${({ theme }) => theme.colors.blueDark5};
 
     &:after {
       content: ' ';
@@ -30,7 +27,7 @@ export const TypographyLink = styled(Typography)`
       height: 7px;
       margin-top: 7px;
       left: -20px;
-      background-color: ${({ theme }) => theme.colors.rosybrownDark};
+      background-color: ${({ theme }) => theme.colors.greenyellow};
       z-index: 4;
       border-radius: 50%;
     }
@@ -38,16 +35,21 @@ export const TypographyLink = styled(Typography)`
 `;
 
 export const StyledContentDropdown = styled.div`
-  position: relative;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 140px;
+  flex-wrap: unset;
+  flex-direction: row;
+  justify-content: start;
+  gap: 82px;
+  position: absolute;
+  top: 15px;
+  left: 20%;
 
   ${breakpoint.md} {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
     max-width: 490px;
     margin: 0 auto;
     gap: 10px;
@@ -58,8 +60,11 @@ export const StyledContentDropdown = styled.div`
     display: flex;
     flex-wrap: unset;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     gap: 82px;
+    position: absolute;
+    top: 22px;
+    left: 18%;
   }
 `;
 
@@ -71,13 +76,12 @@ export const StyledDropdownMenu = styled.ul`
   min-height: 196px;
   border-radius: 0 5px 5px 5px;
   z-index: 22;
-  opacity: 0.9;
   box-shadow: 0 34px 34px 0 #1530604d;
 `;
 
 export const ButtonDropdown = styled.button<{ isActive: boolean }>`
   background-color: ${({ theme, isActive }) => (isActive ? theme.colors.white : '')};
-  width: 150px;
+  width: 120px;
   height: 40px;
   padding: 10px;
   max-height: 40px;

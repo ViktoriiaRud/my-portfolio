@@ -1,10 +1,13 @@
 import myLogo from "../assets/logo/logo_portfolio.png";
 import {DropdownMenuType} from "../types/header";
+import {MyHeaderType} from "../components/organisms/my-header";
 
-export const dataHeader = {
+export const dataHeader: MyHeaderType = {
     srcImage: myLogo,
     altText: "logo",
     url: "/",
+    titleAboutMe: 'About me',
+    urlAboutMe: 'https://viktoriiarud.github.io/',
 }
 
 export const dataDropdownMenu: DropdownMenuType = {

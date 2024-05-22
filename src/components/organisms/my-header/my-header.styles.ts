@@ -2,31 +2,40 @@ import styled from 'styled-components';
 import {breakpoint} from "../../../theme";
 
 export const StyledColorHeader = styled.div`
-    width: 100%;
-    min-height: 100px;
+  background-color: #F5F9FF;
+  width: 100%;
 `;
 
 export const StyledWrapperHeader = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const StyledLogo = styled.div`
-    max-width: 100px;
-    min-height: 100px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  
+    margin-left: 0;
+    
     img {
-        width: 70px;
-        height: 70px;
-      margin-left: -80px;
+        padding: 8px 0;
+        width: 60px;
+        height: 60px;
+        margin-left: -10px;
+    }
+
+    ${breakpoint.xl} {
+        margin-left: -100px;
     }
 `;
 
-export const StyledDropdownMenuMobile = styled.div`
-  display: none;
+export const StyledButtonWidth = styled.div`
+  width: 140px;
+`;
 
-  ${breakpoint.lg} {
-    display: block;
-  }
+export const StyledButtonNav = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 10px;
 `;

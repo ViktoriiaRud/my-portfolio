@@ -35,6 +35,24 @@ export const StyledButton = styled.a<ButtonPropsType>`
           ' &:hover {background-color: #C54B73; color: black;}'
         );
 
+      case 'greenyellow':
+        return (
+            'background-color: #C2EC22; color: #FFFFFF; ' +
+            ' &:hover {background-color: #C54B73; color: black;}'
+        );
+
+      case 'blue':
+        return (
+            'background-color: #1C2C7D; color: #FFFFFF; ' +
+            ' &:hover {background-color: #C2EC22; color: black;}'
+        );
+
+      case 'transparent':
+        return (
+            'background-color: transparent; color: #FFFFFF; ' +
+            ' &:hover {color: #C2EC22;}'
+        );
+
       case 'gray':
         return (
           'background-color: #575757; color: #FFFFFF;' +

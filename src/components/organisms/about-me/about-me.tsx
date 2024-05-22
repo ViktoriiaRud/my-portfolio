@@ -12,6 +12,8 @@ import {
     StyledLinkAboutMe,
 } from "./about-me.styles";
 import {Link} from "gatsby";
+import ButtonDoubleBlue from "../../molecules/button-double-blue";
+import {dataButtonDoubleBlue} from "../../../data/data-page";
 
 
 
@@ -27,11 +29,7 @@ const AboutMe = ({subtitle, titleAboutMe, altText, title, url, srcImage, descrip
                         <TypographySubtitle html={subtitle} variant="title" color={'greenyellow'}/>
                         <TypographyTitle html={title} variant="title_1"/>
                         <TypographyDescription html={description} variant="title_2"/>
-                        <StyledLinkAboutMe>
-                            <Link to={url}>
-                                <h3>{titleAboutMe}</h3>
-                            </Link>
-                        </StyledLinkAboutMe>
+                        <ButtonDoubleBlue {...dataButtonDoubleBlue}/>
                     </StyledWrapperTitle>
                     <StyledWrapperContact>
                         <img src={srcImage} alt={altText}/>
