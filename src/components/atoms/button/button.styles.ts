@@ -56,7 +56,7 @@ export const StyledButton = styled.a<ButtonPropsType>`
       case 'gray':
         return (
           'background-color: #575757; color: #FFFFFF;' +
-          ' &:hover {background-color: #C54B73; color: #FFFFFF;}'
+          ' &:hover {background-color: #C2C4BF; color: black;}'
         );
     }
   }}

@@ -16,9 +16,10 @@ import {
     WrapperProjectCard,
     TypographySubtitleKb,
     TypographyTitle,
+    StyledWrapperButtonGray,
+    StyledWrapperContentText,
 } from './project-card.styles';
 
-import {StyledWrapperButton} from "../../atoms/button/button.styles";
 import {ProjectCardType} from "../../../types/components";
 
 const ProjectCard = ({contentCard}:ProjectCardType) => {
@@ -27,7 +28,7 @@ const ProjectCard = ({contentCard}:ProjectCardType) => {
         <WrapperProjectCard>
             <Container>
                 <TypographyTitle html={'Portfolio'} variant="title_2"/>
-                <TypographySubtitleKb html={'My projects'} variant="title_3" color={'rosybrownDark'}/>
+                <TypographySubtitleKb html={'My projects'} variant="title_3" color={'blueDark5'}/>
                 <StyledWrapperCard>
                     <StyledContainerCard>
                         {contentCard.cards
@@ -49,17 +50,19 @@ const ProjectCard = ({contentCard}:ProjectCardType) => {
                                     {isShown === index && (
                                         <div>
                                             <StyledContentFront>
+                                                <StyledWrapperContentText>
                                                     <StyledContentText>
-                                                        <TypographyTitleFront html={card.title} variant="title_6" />
+                                                        <TypographyTitleFront html={card.title} variant="title_6" color={'blueDark6'} />
                                                     </StyledContentText>
-                                                <TypographyTitleDescription html={card.description} variant="title_5" />
+                                                    <TypographyTitleDescription html={card.description} variant="title_5" />
+                                                </StyledWrapperContentText>
+                                                <StyledWrapperButtonGray>
                                                 <StyledButtonWidth>
-                                                    <StyledWrapperButton>
-                                                        <Button variant="rosybrownDark" size="sm" href={card.hrefButton}>
+                                                        <Button variant="gray" size="sm" href={card.hrefButton}>
                                                             {card.titleButton}
                                                         </Button>
-                                                    </StyledWrapperButton>
                                                 </StyledButtonWidth>
+                                            </StyledWrapperButtonGray>
                                             </StyledContentFront>
                                         </div>
                                     )}

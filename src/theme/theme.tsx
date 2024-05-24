@@ -26,7 +26,6 @@ export const theme = {
         blueDark: '#152356',
         blueDark5: '#223581',
         blueDark6: '#1C2C7D',
-        blueDarkTwo: '#2D247F',
         blueGreen: '#225E81',
         lightpink: '#FCDEEF',
         backgroundPink: '#F7EDF4',

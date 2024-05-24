@@ -8,9 +8,9 @@ export type ButtonPropsType = {
     | 'rosybrownDark'
     | 'lightpink'
     | 'gray'
-   | 'greenyellow'
-   | 'blue'
-   | 'transparent'
+    | 'greenyellow'
+    | 'blue'
+    | 'transparent'
   size?: 'sm' | 'md' | 'lg';
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement>
