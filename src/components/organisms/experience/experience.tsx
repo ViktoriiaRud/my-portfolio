@@ -20,10 +20,10 @@ const Experience = ({title, subTitle, srcImage, altText, subtitle2, subtitle4, s
             <StyledWrapperExperience>
                     <StyledWrapperHow>
                         <TypographyTitle html={title} variant="title_2"/>
-                        <TypographySubtitleExp html={subTitle} variant="title_3" color={'rosybrownDark'}/>
+                        <TypographySubtitleExp html={subTitle} variant="title_3" color={'blueDark5'}/>
                         <TypographySubtitle html={subtitle2} variant={'title_5'}/>
                         <TypographyData html={subtitle3} variant={'title_4'}/>
-                        <TypographyDescription variant={'title_7'}>
+                        <TypographyDescription variant={'description'}>
                             {subtitle4}
                             <br/>
                             {subtitle5}

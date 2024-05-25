@@ -41,3 +41,11 @@ export type ButtonDoubleBlueType = {
     titleButtonTwo: string;
     hrefButtonTwo: string;
 };
+
+export type AboutMeExperienceType = {
+    srcImage: {};
+    altText: string;
+    subtitle: string;
+    description: string;
+    title: string
+};

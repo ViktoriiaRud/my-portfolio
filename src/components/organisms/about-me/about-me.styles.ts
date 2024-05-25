@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { breakpoint } from '../../../theme';
 import Typography from "../../atoms/typography";
 
-export const WrapperAboutClient = styled.div`
+export const WrapperAboutMe = styled.div`
   width: 100%;
   background: linear-gradient(to right, #B5C3F2, #1C2C7D);
 `;
 
-export const StyledWrapperAboutClient = styled.div`
+export const StyledWrapperAboutMe = styled.div`
   margin: 0 auto;
   min-height: 399px;
   display: flex;
@@ -32,14 +32,14 @@ export const StyledWrapperTitle = styled.div`
 
   ${breakpoint.md} {
     padding: 0;
-    margin: 100px 117px 100px 0;
+    margin: 270px 90px 100px 0;
     max-width: 680px;
     width: 70%;
     text-align: start;
   }
 `;
 
-export const StyledWrapperContact = styled.div`
+export const StyledWrapperImg = styled.div`
   width: 100%;
   text-align: center;
   margin: 50px 0 50px;
@@ -66,23 +66,4 @@ export const TypographyTitle = styled(Typography)`
   margin-top: 25px;
   max-width: 595px;
   line-height: 42px;
-`;
-
-export const TypographyDescription = styled(Typography)`
-  font-family: ${({ theme }) => theme.font3};
-  margin-top: 25px;
-  max-width: 689px;
-`;
-
-export const StyledLinkAboutMe = styled.div`
-  width: 100px;
-  min-height: 30px;
-  background-color: ${({ theme }) => theme.colors.greenyellow};
-  text-align: center;
-  align-items: center;
-  padding-top: 5px;
-  
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
 `;
