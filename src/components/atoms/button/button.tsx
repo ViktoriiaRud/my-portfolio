@@ -5,7 +5,7 @@ import { StyledButton } from './button.styles';
 export type ButtonPropsType = {
   href?: string;
   variant?:
-    | 'rosybrownDark'
+    | 'orange'
     | 'lightpink'
     | 'gray'
     | 'greenyellow'

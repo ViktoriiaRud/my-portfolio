@@ -13,7 +13,13 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
         text-decoration-color: ${({theme}) => theme.colors.rosybrownDark};
     }
 
-    &[data-variant='title'],
+    &[data-variant='title'] {
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: 0;
+    }
+
     &[data-variant='title_2'] {
         font-size: 42px;
         font-weight: 400;
@@ -28,7 +34,7 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
     }
 
     &[data-variant='title_3'] {
-        font-size: 32px;
+        font-size: 38px;
         font-weight: 500;
         letter-spacing: 0;
     }
@@ -52,9 +58,9 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
 
     &[data-variant='title_6'],
     &[data-variant='title06'] {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 800;
-        letter-spacing: 0;
+        letter-spacing: 4px;
     }
 
     &[data-variant='title06'] {

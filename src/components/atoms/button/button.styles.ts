@@ -23,40 +23,40 @@ export const StyledButton = styled.a<ButtonPropsType>`
 
   ${({ variant }) => {
     switch (variant) {
-      case 'rosybrownDark':
+      case 'orange':
         return (
-          'background-color: #8C2C61; color: #FFFFFF; ' +
-          ' &:hover {background-color: #C54B73; color: #FFFFFF;}'
+          'background-color: #F0700F; color: #FFFFFF; ' +
+          ' &:hover {background-color: #FCC5BF; color: #000000;}'
         );
 
       case 'lightpink':
         return (
           'background-color: #FCDEEF; color: #FFFFFF; ' +
-          ' &:hover {background-color: #C54B73; color: black;}'
+          ' &:hover {background-color: #C54B73; color: #000000;}'
         );
 
       case 'greenyellow':
         return (
             'background-color: #C2EC22; color: #FFFFFF; ' +
-            ' &:hover {background-color: #C54B73; color: black;}'
+            ' &:hover {background-color: #C54B73; color: #000000;}'
         );
 
       case 'blue':
         return (
-            'background-color: #1C2C7D; color: #FFFFFF; ' +
-            ' &:hover {background-color: #C2EC22; color: black;}'
+            'background-color: #225E81; color: #FFFFFF; ' +
+            ' &:hover {background-color: #689CA1; color: #000000;}'
         );
 
       case 'transparent':
         return (
             'background-color: transparent; color: #FFFFFF; ' +
-            ' &:hover {color: #C2EC22;}'
+            ' &:hover {color: #C2C4BF;}'
         );
 
       case 'gray':
         return (
           'background-color: #575757; color: #FFFFFF;' +
-          ' &:hover {background-color: #C2C4BF; color: black;}'
+          ' &:hover {background-color: #C2C4BF; color: #000000;}'
         );
     }
   }}

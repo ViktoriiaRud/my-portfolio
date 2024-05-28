@@ -47,5 +47,8 @@ export type AboutMeExperienceType = {
     altText: string;
     subtitle: string;
     description: string;
-    title: string
+    description2: string;
+    description3: string;
+    title: string;
+    description4: string;
 };

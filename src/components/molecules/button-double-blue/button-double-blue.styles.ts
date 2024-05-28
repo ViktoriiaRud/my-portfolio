@@ -24,8 +24,8 @@ export const StyledDoubleButton = styled.div`
   }
 `;
 export const StyledButtonWidthOne = styled.div`
-  width: 140px;
+  width: 160px;
 `;
 export const StyledButtonWidthTwo = styled.div`
-  width: 140px;
+  width: 160px;
 `;

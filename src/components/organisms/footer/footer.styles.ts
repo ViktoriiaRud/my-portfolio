@@ -6,7 +6,7 @@ export const StylesWrapperFooter = styled.div`
   height: 100%;
   min-height: 300px;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.blueDark};
+  background-color: ${({ theme }) => theme.colors.black};
 
   ${breakpoint.sm} {
     margin: 50px auto;

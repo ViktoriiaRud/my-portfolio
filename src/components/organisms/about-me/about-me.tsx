@@ -22,8 +22,8 @@ const AboutMe = ({subtitle, altText, title, srcImage, description}: AboutMeType)
             <Container>
                 <StyledWrapperAboutMe>
                     <StyledWrapperTitle>
-                        <TypographySubtitle html={subtitle} variant="title" color={'greenyellow'}/>
-                        <TypographyTitle html={title} variant="title_1"/>
+                        <TypographySubtitle html={subtitle} variant="title_1" color={'white'}/>
+                        <TypographyTitle html={title} variant="title" color={'white'}/>
                         <ButtonDoubleBlue {...dataButtonDoubleBlue}/>
                     </StyledWrapperTitle>
                     <StyledWrapperImg>

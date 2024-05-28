@@ -54,5 +54,6 @@ export const TypographyData = styled(Typography)`
 
 export const TypographyTitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font1};
+  text-transform: uppercase;  
   margin-top: 100px;
 `;

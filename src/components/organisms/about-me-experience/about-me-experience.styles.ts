@@ -18,7 +18,7 @@ export const StyledWrapperAboutMeExperience = styled.div`
   ${breakpoint.lg} {
     flex-direction: row;
     justify-content: center;
-    gap: 76px;
+    gap: 60px;
   }
 `;
 
@@ -36,15 +36,16 @@ export const StyledWrapperTitle = styled.div`
 `;
 
 export const StyledWrapperImg = styled.div`
-  margin: 0 auto;
+  margin: 10px auto;
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 278px;
+  max-width: 298px;
 
   img {
-    height: 368px;
+    height: 410px;
     object-fit: cover;
+    border-radius: 10px;
   }
 
   ${breakpoint.lg} {
@@ -57,11 +58,19 @@ export const StyledTypographyDescription = styled(Typography)`
   font-family: ${({ theme }) => theme.font3};
   margin-top: 10px;
   line-height: 35px;
+
+  .bold {
+    font-family: ${({ theme }) => theme.font3};
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const TypographySubtitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font1};
   text-align: center;
+  text-transform: uppercase;
 
   ${breakpoint.md} {
     text-align: start;

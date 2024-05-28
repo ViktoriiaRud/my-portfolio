@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     overflow-x: hidden;
     word-break: break-word;
-    background-color: ${({ theme }) => theme.colors.backgroundLightblue};
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
 
     ${breakpoint.lg} {
       padding-top: 0;

@@ -118,6 +118,7 @@ export const TypographySubtitleKb = styled(Typography)`
 
 export const TypographyTitle = styled(Typography)`
     font-family: ${({theme}) => theme.font1};
+    text-transform: uppercase;
     padding-top: 100px;
 `;
 

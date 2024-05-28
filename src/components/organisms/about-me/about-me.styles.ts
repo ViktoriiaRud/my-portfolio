@@ -5,7 +5,7 @@ import Typography from "../../atoms/typography";
 
 export const WrapperAboutMe = styled.div`
   width: 100%;
-  background: linear-gradient(to right, #B5C3F2, #1C2C7D);
+  background-color: ${({ theme }) => theme.colors.black};
 `;
 
 export const StyledWrapperAboutMe = styled.div`
@@ -32,7 +32,7 @@ export const StyledWrapperTitle = styled.div`
 
   ${breakpoint.md} {
     padding: 0;
-    margin: 270px 90px 100px 0;
+    margin: 230px 90px 200px 0;
     max-width: 680px;
     width: 70%;
     text-align: start;
@@ -42,18 +42,12 @@ export const StyledWrapperTitle = styled.div`
 export const StyledWrapperImg = styled.div`
   width: 100%;
   text-align: center;
-  margin: 50px 0 50px;
+  margin: 30px 0 30px;
   
   img {
     height: 540px;
     width: 100%;
     object-fit: cover;
-  }
-
-  ${breakpoint.md} {
-    margin: 120px 0 110px;
-    width: 40%;
-    text-align: start;
   }
 `;
 

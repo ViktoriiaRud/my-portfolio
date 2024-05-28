@@ -15,6 +15,7 @@ export const theme = {
     wrapperXxx: '2670px',
     colors: {
         transparent: 'transparent',
+        blue: '#1C2C7D',
         black: '#000000',
         white: '#FFFFFF',
         lightgray: '#CABEC5',
@@ -23,16 +24,16 @@ export const theme = {
         gray3: '#ADADAD',
         rosybrown: '#C54B73',
         rosybrownDark: '#8C2C61',
+        rosy: '#FCC5BF',
         blueDark: '#152356',
         blueDark5: '#223581',
-        blueDark6: '#1C2C7D',
         blueGreen: '#225E81',
         lightpink: '#FCDEEF',
         backgroundPink: '#F7EDF4',
-        backgroundLightblue: '#F5F9FF',
-        greenyellow: '#C2EC22',
+        backgroundColor: '#FFF8F0',
         yellow: '#E1D614',
         lightblue: '#B5C3F2',
+        orange: '#F0700F',
     },
 
     gap: {

@@ -25,7 +25,7 @@ const ButtonDoubleBlue = ({
     </StyledButtonWidthOne>
     <StyledButtonWidthTwo>
       <StyledWrapperButton>
-        <Button variant="transparent" size="sm" href={hrefButtonTwo}>
+        <Button variant="orange" size="sm" href={hrefButtonTwo}>
           {titleButtonTwo}
         </Button>
       </StyledWrapperButton>

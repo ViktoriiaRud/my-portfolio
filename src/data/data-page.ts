@@ -37,8 +37,8 @@ export const dataExperience: ExperienceType = {
 }
 
 export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
-    hrefButtonOne: '/#about-me',
-    titleButtonOne: 'About-me',
+    hrefButtonOne: '/#download-CV',
+    titleButtonOne: 'Download CV',
     hrefButtonTwo: '/#portfolio',
     titleButtonTwo: 'Portfolio',
 }
@@ -46,17 +46,20 @@ export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
 export const dataAboutMeExperience: AboutMeExperienceType = {
     subtitle: 'About me',
     title: "My name is Viktoriia Rudneva",
-    description: 'I am a dedicated and aspiring Front-end Developer with one year\n' +
-        'of professional experience at For Better Future Software House. \n' +
-        'am pro client in developing web pages and online stores,\n' +
+    description: 'I am a dedicated and aspiring',
+    description2: ' Front-end Developer with one year\n' +
+        'of professional experience at For Better Future Software House.',
+    description3: ' I\n' +
+        'am proficient in developing web pages and online stores,\n' +
         'specializing in React and utilizing additional technologies such as\n' +
         'Typescript and Gatsby to enhance project functionality.\n' +
         'Demonstrated versatility by successfully creating an online store\n' +
         'using Magento 2. I acquired valuable experience as a freelance\n' +
         'developer by delivering two one-page websites (Landing Pages)\n' +
-        'before joining the company. I am committed to staying abreast of\n' +
+        'before joining the company.',
+    description4: 'I am committed to staying abreast of\n' +
         'industry trends and continually expanding my skills to contribute\n' +
         'effectively to dynamic development projects.',
     srcImage: AboutMeExperienceImg,
-    altText: 'CEO | Sales Director',
+    altText: 'AboutMe',
 }

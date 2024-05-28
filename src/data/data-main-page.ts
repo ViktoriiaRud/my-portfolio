@@ -1,4 +1,4 @@
-import myImage from '../assets/image/myPhoto.png';
+import myImage from '../assets/image-background/pexels-junior-teixeira.jpg';
 import ProjectImg1 from '../assets/image/project3.png';
 import ProjectImg2 from '../assets/image/project2.png';
 import ProjectImg3 from '../assets/image/project1.png';
@@ -10,7 +10,7 @@ export const dataAboutMe: {
     title: string;
 } = {
     subtitle: 'My name is Viktoriia Rudneva',
-    title: 'I\'m Front-End Developer (Junior)',
+    title: 'I\'m a Front-End Developer',
     srcImage: myImage,
     altText: 'Front-end Developer Viktoriia Rudneva',
 };

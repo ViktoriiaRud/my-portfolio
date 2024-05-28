@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import {breakpoint} from "../../../theme";
 
 export const StyledColorHeader = styled.div`
-  background-color: #F5F9FF;
-  width: 100%;
+    background-color: ${({theme}) => theme.colors.orange};
+    width: 100%;
+    max-height: 85px;
 `;
 
 export const StyledWrapperHeader = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,12 +17,13 @@ export const StyledWrapperHeader = styled.div`
 
 export const StyledLogo = styled.div`
     margin-left: 0;
+    position: absolute;
     
     img {
-        padding: 8px 0;
-        width: 60px;
-        height: 60px;
+        width: 130px;
+        height: 130px;
         margin-left: -10px;
+        object-fit: cover;
     }
 
     ${breakpoint.xl} {
@@ -29,7 +32,7 @@ export const StyledLogo = styled.div`
 `;
 
 export const StyledButtonWidth = styled.div`
-  width: 140px;
+  width: 160px;
 `;
 
 export const StyledButtonNav = styled.div`

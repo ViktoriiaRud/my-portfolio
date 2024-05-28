@@ -1,17 +1,16 @@
 import React from 'react';
 
-import DropdownMenu from "../../molecules/dropdown-menu";
-
 import {
     StyledColorHeader,
     StyledWrapperHeader,
     StyledLogo,
-    StyledDropdownMenuMobile, StyledWrapperButton, StyledButtonWidth, StyledButtonNav
+    StyledButtonWidth,
+    StyledButtonNav
 } from './my-header.styles';
+
 import Container from "../../atoms/container";
 import {Link} from "gatsby";
 import {
-    dataDropdownMenu,
     dataHeader,
 } from "../../../data/data-header";
 
@@ -36,7 +35,6 @@ const MyHeader = () => {
                     </StyledLogo>
                     <StyledButtonNav>
                         <nav>
-                          <DropdownMenu {...dataDropdownMenu}/>
                         </nav>
                         <div>
                         <StyledButtonWidth>
