@@ -81,4 +81,9 @@ export const TypographyTitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font3};
   margin-top: 20px;
   max-width: 561px;
+  text-align: center;
+
+  ${breakpoint.md} {
+    text-align: start;
+  }
 `;

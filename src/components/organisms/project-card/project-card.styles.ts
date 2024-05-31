@@ -11,7 +11,7 @@ export const WrapperProjectCard = styled.div`
 
 export const StyledWrapperCard = styled.div`
     max-width: 1256px;
-    margin: 52px auto;
+    margin: 50px auto;
 
     ${breakpoint.lg} {
         max-width: 1986px;
@@ -23,31 +23,28 @@ export const StyledContainerCard = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 25px;
-
-    ${breakpoint.md} {
-        gap: 60px;
-    }
+    gap: 10px;
+    padding-bottom: 50px;
 
     ${breakpoint.lg} {
         flex-wrap: unset;
-        gap: 25px;
-        justify-content: space-around;
-    }
-
-    ${breakpoint.xl} {
-        gap: 20px;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 0;
     }
 `;
 
 export const Card = styled.div`
     width: 100%;
     height: 100%;
+    max-width: 480px;
+    min-height: 294px;
 `;
 
 export const StyledContentCard = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 22px;
     max-width: 480px;
     min-height: 294px;

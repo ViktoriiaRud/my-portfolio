@@ -6,5 +6,5 @@ export const dataHeader: MyHeaderType = {
     altText: "logo",
     url: "/",
     titleAboutMe: 'About me',
-    urlAboutMe: 'https://viktoriiarud.github.io/',
+    urlAboutMe: '/#about-me',
 }

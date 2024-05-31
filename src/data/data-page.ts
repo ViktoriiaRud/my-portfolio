@@ -37,7 +37,7 @@ export const dataExperience: ExperienceType = {
 }
 
 export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
-    hrefButtonOne: '/#download-CV',
+    hrefButtonOne: 'https://www.linkedin.com/in/viktoriia-rudneva/overlay/1635555348034/single-media-viewer/?profileId=ACoAADZldC4BVpSouJHG6mMzqa_xueBtUOD6tTI',
     titleButtonOne: 'Download CV',
     hrefButtonTwo: '/#portfolio',
     titleButtonTwo: 'Portfolio',

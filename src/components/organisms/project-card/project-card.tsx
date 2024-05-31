@@ -25,7 +25,7 @@ import {ProjectCardType} from "../../../types/components";
 const ProjectCard = ({contentCard}:ProjectCardType) => {
     const [isShown, setIsShown] = useState<number | null>(null);
     return (
-        <WrapperProjectCard>
+        <WrapperProjectCard id={'portfolio'}>
             <Container>
                 <TypographyTitle html={'Portfolio'} variant="title_6"/>
                 <TypographySubtitleKb html={'My projects'} variant="title_3" color={'orange'}/>

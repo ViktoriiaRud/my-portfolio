@@ -24,9 +24,9 @@ const AboutMeExperience = ({
                                srcImage,
                                altText,
                            }: AboutMeExperienceType) => (
-    <WrapperAboutMeExperience>
+    <WrapperAboutMeExperience id={'about-me'}>
         <Container>
-            <StyledWrapperAboutMeExperience>
+            <StyledWrapperAboutMeExperience >
                 <StyledWrapperImg>
                     <img src={srcImage} alt={altText}/>
                 </StyledWrapperImg>
