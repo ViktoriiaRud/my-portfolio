@@ -16,7 +16,7 @@ import {dataButtonDoubleBlue} from "../../../data/data-page";
 export type AboutMeType = {
 };
 
-const AboutMe = ({subtitle, altText, title, srcImage, description}: AboutMeType) => {
+const AboutMe = ({subtitle, altText, title, srcImage}: AboutMeType) => {
     return <>
         <WrapperAboutMe>
             <Container>

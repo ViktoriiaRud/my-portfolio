@@ -9,9 +9,9 @@ export const StyledButton = styled.a<ButtonPropsType>`
   border: none;
   margin: 0 auto;
   position: relative;
-  font-family: ${({ theme }) => theme.font2};
+  font-family: ${({ theme }) => theme.font3};
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.2em;
   text-align: center;

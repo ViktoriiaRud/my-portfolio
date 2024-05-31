@@ -6,10 +6,10 @@ import {
     Card,
     StyledContainerCard,
     StyledButtonWidth,
-    StyledContentBack,
-    StyledContentFront,
+    WrapperImgFront,
+    StyledContentCard,
     StyledContentText,
-    StyledImgCard,
+    StyledImgFront,
     StyledWrapperCard,
     TypographyTitleDescription,
     TypographyTitleFront,
@@ -39,20 +39,18 @@ const ProjectCard = ({contentCard}:ProjectCardType) => {
                                     onMouseLeave={() => setIsShown(null)}
                                 >
                                     {isShown !== index && (
-                                        <div>
-                                            <StyledContentBack>
-                                                <StyledImgCard>
+                                            <WrapperImgFront>
+                                                <StyledImgFront>
                                                     <img src={card.srcImage} alt={card.altText} />
-                                                </StyledImgCard>
-                                            </StyledContentBack>
-                                        </div>
+                                                </StyledImgFront>
+                                            </WrapperImgFront>
                                     )}
                                     {isShown === index && (
                                         <div>
-                                            <StyledContentFront>
+                                            <StyledContentCard>
                                                 <StyledWrapperContentText>
                                                     <StyledContentText>
-                                                        <TypographyTitleFront html={card.title} variant="title_6" color={'blueDark6'} />
+                                                        <TypographyTitleFront html={card.title} variant="title_6" color={'orange'} />
                                                     </StyledContentText>
                                                     <TypographyTitleDescription html={card.description} variant="title_5" />
                                                 </StyledWrapperContentText>
@@ -63,7 +61,7 @@ const ProjectCard = ({contentCard}:ProjectCardType) => {
                                                         </Button>
                                                 </StyledButtonWidth>
                                             </StyledWrapperButtonGray>
-                                            </StyledContentFront>
+                                            </StyledContentCard>
                                         </div>
                                     )}
                                 </Card>

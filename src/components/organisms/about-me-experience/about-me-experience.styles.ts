@@ -68,7 +68,7 @@ export const StyledTypographyDescription = styled(Typography)`
 `;
 
 export const TypographySubtitle = styled(Typography)`
-  font-family: ${({ theme }) => theme.font1};
+  font-family: ${({ theme }) => theme.font3};
   text-align: center;
   text-transform: uppercase;
 

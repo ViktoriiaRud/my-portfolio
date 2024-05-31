@@ -41,17 +41,16 @@ export const StyledContainerCard = styled.div`
 `;
 
 export const Card = styled.div`
-    max-width: 396px;
     width: 100%;
     height: 100%;
 `;
 
-export const StyledContentFront = styled.div`
+export const StyledContentCard = styled.div`
     display: flex;
     flex-direction: column;
     gap: 22px;
-    max-width: 396px;
-    max-height: 300px;
+    max-width: 480px;
+    min-height: 294px;
     width: 100%;
     height: 100%;
     padding: 35px 30px 60px 30px;
@@ -59,52 +58,41 @@ export const StyledContentFront = styled.div`
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: ease;
+    border: 1px solid ${({theme}) => theme.colors.orange};
 `;
 
-export const StyledContentBack = styled.div`
-    max-width: 396px;
-    max-height: 300px;
-    width: 100%;
-    height: 100%;
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: ease;
-`;
+export const WrapperImgFront = styled.div``;
 
-export const StyledContentText = styled.div`
-    max-width: 144px;
-`;
+export const StyledContentText = styled.div``;
 
 export const TypographyTitleFront = styled(Typography)`
-    font-family: ${({theme}) => theme.font1};
-    margin: 20px 10px 20px;
+    font-family: ${({theme}) => theme.font3};
     line-height: 42px;
     display: block;
-    text-align: start;
+    text-align: center;
 `;
 
 export const TypographyTitleDescription = styled(Typography)`
-    font-family: ${({theme}) => theme.font2};
+    font-family: ${({theme}) => theme.font3};
     margin: 20px 10px 20px;
     line-height: 32px;
+    text-align: center;
 `;
 
-export const StyledImgCard = styled.div`
-    max-width: 396px;
+export const StyledImgFront = styled.div`
+    max-width: 480px;
     width: 100%;
     height: 100%;
 
     img {
-        max-width: 396px;
         width: 100%;
         height: 300px;
         object-fit: cover;
-        position: absolute;
     }
 `;
 
 export const StyledButtonWidth = styled.div`
-    width: 100%;
+    width: 160px;
     margin: 0 auto;
 `;
 
@@ -114,10 +102,12 @@ export const StyledWrapperButtonGray = styled.div`
 export const TypographySubtitleKb = styled(Typography)`
     margin-top: 20px;
     font-family: ${({theme}) => theme.font3};
+    text-align: center;
 `;
 
 export const TypographyTitle = styled(Typography)`
-    font-family: ${({theme}) => theme.font1};
+    font-family: ${({theme}) => theme.font3};
+    text-align: center;
     text-transform: uppercase;
     padding-top: 100px;
 `;

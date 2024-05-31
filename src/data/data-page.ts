@@ -27,7 +27,7 @@ export const dataExperience: ExperienceType = {
         '                        button, tooltip menu, drop down menu, ipping cards, carousel\n' +
         '                        slider, and carousel with reviews. Also, I created basic components,\n' +
         '                        such as a container and theme.',
-    subtitle12: '( 06/2023...)',
+    subtitle12: '( 06/2023-04/2024)',
     subtitle13: 'Freelancer',
 
     subtitle14: '( October 2022 - February 2023 )',

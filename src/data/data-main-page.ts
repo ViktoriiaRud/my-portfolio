@@ -1,5 +1,5 @@
 import myImage from '../assets/image-background/pexels-junior-teixeira.jpg';
-import ProjectImg1 from '../assets/image/project3.png';
+import ProjectImg1 from '../assets/image/project-gen-b.png';
 import ProjectImg2 from '../assets/image/project2.png';
 import ProjectImg3 from '../assets/image/project1.png';
 
@@ -9,8 +9,8 @@ export const dataAboutMe: {
     subtitle: string;
     title: string;
 } = {
-    subtitle: 'My name is Viktoriia Rudneva',
-    title: 'I\'m a Front-End Developer',
+    subtitle: 'Hello, i’m Viktoriia Rudneva',
+    title: 'Front-End Developer',
     srcImage: myImage,
     altText: 'Front-end Developer Viktoriia Rudneva',
 };

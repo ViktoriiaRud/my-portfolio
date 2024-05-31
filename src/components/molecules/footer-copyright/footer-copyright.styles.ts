@@ -4,7 +4,7 @@ import { breakpoint } from '../../../theme';
 import Typography from '../../atoms/typography';
 
 export const StyledCopyrightWrapper = styled.div`
-    margin: 20px auto;
+    padding: 40px;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -29,11 +29,11 @@ export const StyledSpanCopyright = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.gray2};
 `;
 export const StyledTypographyLeft = styled(Typography)`
-  font-family: ${({ theme }) => theme.font2};
+  font-family: ${({ theme }) => theme.font3};
   text-align: left;
 `;
 export const StyledTypographyRight = styled(Typography)`
-  font-family: ${({ theme }) => theme.font2};
+  font-family: ${({ theme }) => theme.font3};
   text-align: right;
 `;
 export const StyledDataWrapper = styled.div`

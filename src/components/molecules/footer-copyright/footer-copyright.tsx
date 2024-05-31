@@ -27,22 +27,22 @@ const FooterCopyright = ({titlePortfolio, titleName, titlePrivacy, titleDevelope
         <StyledCopyrightWrapper>
             <StyledDataWrapper>
                 <StyledDataYear>
-                    <StyledTypographyLeft variant={"title_4"} color={'gray2'}>{new Date().getFullYear()}</StyledTypographyLeft>
+                    <StyledTypographyLeft variant={"title_4"} color={'white'}>{new Date().getFullYear()}</StyledTypographyLeft>
                 </StyledDataYear>
                 <StyledPortfolio>
-                    <StyledTypographyLeft html={titlePortfolio} variant="title_4" color={'gray2'}/>
+                    <StyledTypographyLeft html={titlePortfolio} variant="title_4" color={'white'}/>
                 </StyledPortfolio>
                 <StyledDeveloper>
-                    <StyledTypographyLeft html={titleDeveloper} variant="title_4" color={'gray2'}/>
+                    <StyledTypographyLeft html={titleDeveloper} variant="title_4" color={'white'}/>
                 </StyledDeveloper>
                 <StyledName>
-                    <StyledTypographyLeft html={titleName} variant="title_4" color={'gray2'}/>
+                    <StyledTypographyLeft html={titleName} variant="title_4" color={'white'}/>
                 </StyledName>
             </StyledDataWrapper>
             <StyledPolicyWrapper>
                 <StyledPolicy>
                     <Link to={url}>
-                        <StyledTypographyRight html={titlePrivacy} variant="title_4" color={'gray2'}/>
+                        <StyledTypographyRight html={titlePrivacy} variant="title_4" color={'white'}/>
                     </Link>
                 </StyledPolicy>
             </StyledPolicyWrapper>
