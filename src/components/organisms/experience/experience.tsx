@@ -17,7 +17,7 @@ import {ExperienceType} from "../../../types/components";
 const Experience = ({title, subTitle, srcImage, altText, subtitle2, subtitle4, subtitle5, subtitle6, subtitle7, subtitle8, subtitle9, subtitle3, subtitle10, subtitle12, subtitle13, subtitle11, subtitle14, subtitle15, subtitle16, subtitle17}: ExperienceType) => {
     return <>
         <Container>
-            <StyledWrapperExperience>
+            <StyledWrapperExperience id={'experience'}>
                     <StyledWrapperHow>
                         <TypographyTitle html={title} variant="title_6"/>
                         <TypographySubtitleExp html={subTitle} variant="title_3" color={'orange'}/>

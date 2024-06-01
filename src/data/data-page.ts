@@ -1,6 +1,7 @@
 import {AboutMeExperienceType, ButtonDoubleBlueType, ExperienceType} from "../types/components";
 import ImgExperience from '../assets/image/pexels-mizunokozuki-12899196.jpg';
 import AboutMeExperienceImg from '../assets/image/myPhoto.png';
+import {MenuType} from "../types/header";
 
 export const dataExperience: ExperienceType = {
     srcImage: ImgExperience,
@@ -63,3 +64,14 @@ export const dataAboutMeExperience: AboutMeExperienceType = {
     srcImage: AboutMeExperienceImg,
     altText: 'AboutMe',
 }
+
+export const dataMenu: MenuType = {
+    items: {
+        links: [
+            { url: '/#about-me', title: 'About me' },
+            { url: '/#portfolio', title: 'Portfolio' },
+            { url: 'skills', title: 'Skills' },
+            { url: '/#experience', title: 'Experience' },
+        ],
+    },
+};

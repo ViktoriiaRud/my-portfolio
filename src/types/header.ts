@@ -9,3 +9,12 @@ export type DropdownMenuType = {
         }[];
     };
 };
+
+export type MenuType = {
+    items: {
+        links: {
+            url: string;
+            title: string;
+        }[];
+    };
+};

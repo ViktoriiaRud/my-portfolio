@@ -38,7 +38,9 @@ export const StyledButtonWidth = styled.div`
 export const StyledButtonNav = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
+  align-items: flex-end;
   width: 100%;
   margin: 20px 10px;
+  gap: 60px;
 `;

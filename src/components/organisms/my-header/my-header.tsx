@@ -15,6 +15,8 @@ import {
 } from "../../../data/data-header";
 
 import Button from "../../atoms/button";
+import {dataMenu} from "../../../data/data-page";
+import Menu from "../../molecules/menu";
 
 export type MyHeaderType = {
     srcImage?: {};
@@ -35,6 +37,7 @@ const MyHeader = () => {
                     </StyledLogo>
                     <StyledButtonNav>
                         <nav>
+                            <Menu {...dataMenu}/>
                         </nav>
                         <div>
                         <StyledButtonWidth>
