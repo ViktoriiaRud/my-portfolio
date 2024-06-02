@@ -4,9 +4,13 @@ import { breakpoint } from '../../../theme';
 import Typography from '../../atoms/typography';
 
 export const WrapperAboutMeExperience = styled.div`
-  margin: 106px 0 99px;
+  margin: 56px 0 50px;
   width: 100%;
   height: 100%;
+
+  ${breakpoint.lg} {
+    margin: 106px 0 99px;
+  }
 `;
 
 export const StyledWrapperAboutMeExperience = styled.div`
@@ -69,21 +73,13 @@ export const StyledTypographyDescription = styled(Typography)`
 
 export const TypographySubtitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font3};
-  text-align: center;
+  text-align: start;
   text-transform: uppercase;
-
-  ${breakpoint.md} {
-    text-align: start;
-  }
 `;
 
 export const TypographyTitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font3};
   margin-top: 20px;
-  max-width: 561px;
-  text-align: center;
-
-  ${breakpoint.md} {
-    text-align: start;
-  }
+  width: 100%;
+  text-align: start;
 `;

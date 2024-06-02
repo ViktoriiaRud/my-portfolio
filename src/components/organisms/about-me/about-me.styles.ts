@@ -27,15 +27,19 @@ export const StyledWrapperAboutMe = styled.div`
 
 export const StyledWrapperTitle = styled.div`
   width: 100%;
-  padding: 50px 20px;
   text-align: center;
+  margin: 180px 0 0;
 
   ${breakpoint.md} {
-    padding: 0;
+    padding-left: 70px;
     margin: 230px 90px 200px 0;
     max-width: 680px;
     width: 70%;
     text-align: start;
+  }
+
+  ${breakpoint.lg} {
+    padding: 0;
   }
 `;
 
@@ -57,7 +61,7 @@ export const TypographySubtitle = styled(Typography)`
 
 export const TypographyTitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font1};
-  margin-top: 25px;
+  margin: 25px auto;
   max-width: 595px;
   line-height: 42px;
 `;

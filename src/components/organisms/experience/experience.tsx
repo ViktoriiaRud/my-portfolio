@@ -52,7 +52,6 @@ const Experience = ({title, subTitle, srcImage, altText, subtitle2, subtitle4, s
                     <StyledWrapperHowImage>
                         <img src={srcImage} alt={altText}/>
                     </StyledWrapperHowImage>
-
             </StyledWrapperExperience>
         </Container>
     </>

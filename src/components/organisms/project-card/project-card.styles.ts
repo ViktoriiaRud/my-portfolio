@@ -99,14 +99,22 @@ export const StyledWrapperButtonGray = styled.div`
 export const TypographySubtitleKb = styled(Typography)`
     margin-top: 20px;
     font-family: ${({theme}) => theme.font3};
-    text-align: center;
+    text-align: start;
+    
+    ${breakpoint.md} {
+        text-align: center;
+    }
 `;
 
 export const TypographyTitle = styled(Typography)`
     font-family: ${({theme}) => theme.font3};
-    text-align: center;
+    text-align: start;
     text-transform: uppercase;
     padding-top: 100px;
+    
+    ${breakpoint.md} {
+        text-align: center;
+    }
 `;
 
 export const StyledWrapperContentText = styled.div``;
