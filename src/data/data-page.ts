@@ -1,7 +1,14 @@
-import {AboutMeExperienceType, ButtonDoubleBlueType, ExperienceType} from "../types/components";
+import {
+    AboutMeExperienceType,
+    BannerWorkType,
+    ButtonDoubleBlueType,
+    ExperienceType,
+    IconSkillsTooltipType
+} from "../types/components";
 import ImgExperience from '../assets/image/pexels-mizunokozuki-12899196.jpg';
 import AboutMeExperienceImg from '../assets/image/myPhoto.png';
 import {MenuType} from "../types/header";
+import BannerImgWork from '../assets/image-background/pexels1.jpg';
 
 export const dataExperience: ExperienceType = {
     srcImage: ImgExperience,
@@ -10,18 +17,13 @@ export const dataExperience: ExperienceType = {
     subTitle: 'How can I be useful',
     subtitle2: 'For Better Future Soft House',
     subtitle3: '( February 2023 - Present )',
-
     subtitle4: ' I specialize in React and work on web pages and online stores.',
     subtitle5: ' I used design Figma.',
     subtitle6: 'Online store project.',
-
-
     subtitle7: 'I used Magento 2, HTML, Less I did footer, blog, changed styles, changed photos, added products to the store using les csv',
     subtitle8: '( 02/2023-05/2023 )',
     subtitle9: '  Project Recruitment website I used React, TypeScript. Created icon components.',
     subtitle10: '( 05/2023- 06/2023 )',
-
-
     subtitle11: '  Project IT Company website\n' +
         '                        I used CSS, StyledComponents, React, TypeScript, and Gatsby. I\n' +
         '                        made components and styles. I created a footer, banner, header,\n' +
@@ -30,7 +32,6 @@ export const dataExperience: ExperienceType = {
         '                        such as a container and theme.',
     subtitle12: '( 06/2023-04/2024)',
     subtitle13: 'Freelancer',
-
     subtitle14: '( October 2022 - February 2023 )',
     subtitle15: 'Project: “Trip’’ (Landing Page) (10/2022 - 12/2022)',
     subtitle16: 'Project: “Restaurant’’ (Landing Page) (12/2022 - 2/2023)',
@@ -74,4 +75,43 @@ export const dataMenu: MenuType = {
             { url: '/#experience', title: 'Experience' },
         ],
     },
+};
+
+export const dataBannerWork: BannerWorkType = {
+    srcImage: BannerImgWork,
+    altText: "work",
+};
+
+export const dataIconSkillsTooltip: IconSkillsTooltipType = {
+    linkText: 'SHOW EXAMPLE',
+    icons: [
+        {
+            name: 'tooltip-javascript',
+            smallIcon: 'tooltip-javascript',
+            title: 'JavaScript',
+            description:
+                'JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. ',
+        },
+        {
+            name: 'tooltip-typescript',
+            smallIcon: 'tooltip-typescript',
+            title: 'TypeScript',
+            description:
+                'The solution to extensive development projects that need swappable components and strong architectural stability.',
+        },
+        {
+            name: 'tooltip-react',
+            smallIcon: 'tooltip-react',
+            title: 'React',
+            description:
+                'React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.',
+        },
+        {
+            name: 'tooltip-next',
+            smallIcon: 'tooltip-next',
+            title: 'Next.js',
+            description:
+                'Next.js is a flexible React framework that gives you building blocks to create fast, full-stack web applications.',
+        },
+    ],
 };

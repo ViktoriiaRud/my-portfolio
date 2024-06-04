@@ -8,6 +8,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@loadable/component": "^5.16.4",
     "@types/react-hamburger-menu": "^0.0.6",
     "gatsby": "^5.0.0",
     "gatsby-plugin-image": "^3.13.1",

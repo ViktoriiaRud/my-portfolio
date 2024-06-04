@@ -4,8 +4,10 @@ import AboutMe from "../components/organisms/about-me";
 import {dataAboutMe, dataProjectCard} from "../data/data-main-page";
 import ProjectCard from "../components/organisms/project-card";
 import Experience from "../components/organisms/experience";
-import {dataAboutMeExperience, dataExperience} from "../data/data-page";
+import {dataAboutMeExperience, dataBannerWork, dataExperience, dataIconSkillsTooltip} from "../data/data-page";
 import AboutMeExperience from "../components/organisms/about-me-experience";
+import BannerWork from "../components/organisms/banner-work";
+import IconSkillsTooltip from "../components/organisms/icon-skills-tooltip";
 
 
 const IndexPage = () => {
@@ -14,6 +16,8 @@ const IndexPage = () => {
             <AboutMe {...dataAboutMe}/>
             <AboutMeExperience {...dataAboutMeExperience}/>
             <ProjectCard {...dataProjectCard}/>
+            <BannerWork {...dataBannerWork}/>
+            <IconSkillsTooltip {...dataIconSkillsTooltip}/>
             <Experience {...dataExperience}/>
         </Layout>
     );

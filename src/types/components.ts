@@ -52,3 +52,18 @@ export type AboutMeExperienceType = {
     title: string;
     description4: string;
 };
+
+export type BannerWorkType = {
+    srcImage: {};
+    altText: string;
+};
+
+export type IconSkillsTooltipType = {
+    linkText: string;
+    icons: {
+        name: string;
+        smallIcon: string;
+        title: string;
+        description: string;
+    }[];
+};
