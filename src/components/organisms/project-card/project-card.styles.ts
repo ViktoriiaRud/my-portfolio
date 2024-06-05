@@ -85,6 +85,7 @@ export const StyledImgFront = styled.div`
         width: 100%;
         height: 300px;
         object-fit: cover;
+        filter:  drop-shadow(2px 4px 6px #575757);
     }
 `;
 

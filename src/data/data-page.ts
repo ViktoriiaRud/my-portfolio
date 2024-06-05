@@ -1,7 +1,7 @@
 import {
-    AboutMeExperienceType,
+    AboutMeExperienceType, ContactType,
     BannerWorkType,
-    ButtonDoubleBlueType,
+    ButtonDoubleBlueType, ContactFormType,
     ExperienceType,
     IconSkillsTooltipType
 } from "../types/components";
@@ -71,7 +71,7 @@ export const dataMenu: MenuType = {
         links: [
             { url: '/#about-me', title: 'About me' },
             { url: '/#portfolio', title: 'Portfolio' },
-            { url: 'skills', title: 'Skills' },
+            { url: '/#skills', title: 'Skills' },
             { url: '/#experience', title: 'Experience' },
         ],
     },
@@ -114,4 +114,20 @@ export const dataIconSkillsTooltip: IconSkillsTooltipType = {
                 'Next.js is a flexible React framework that gives you building blocks to create fast, full-stack web applications.',
         },
     ],
+};
+
+export const dataContactForm: ContactFormType = {
+    name: 'Name*',
+    email: 'E-mail*',
+    message: 'Message*',
+    button: 'send',
+    hrefButton: '#',
+};
+
+export const dataContact: ContactType = {
+    subtitle: 'contact info',
+    email: 'e-mail',
+    emailTitle: 'viktoriiadeveloper@gmail.com',
+    phone: 'phone',
+    phoneNumber: '+48 731 148 433',
 };

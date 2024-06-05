@@ -5,11 +5,11 @@ import {StylesWrapperFooter} from './footer.styles';
 import Container from "../../atoms/container";
 import FooterCopyright from "../../molecules/footer-copyright";
 import {dataFooterCopyright} from "../../../data/data-footer";
-import {StyledSpanCopyright} from "../../molecules/footer-copyright/footer-copyright.styles";
+// import {StyledSpanCopyright} from "../../molecules/footer-copyright/footer-copyright.styles";
 
 const Footer = () => (
     <StylesWrapperFooter>
-        <StyledSpanCopyright/>
+        {/*<StyledSpanCopyright/>*/}
         <Container>
             <FooterCopyright {...dataFooterCopyright} />
         </Container>

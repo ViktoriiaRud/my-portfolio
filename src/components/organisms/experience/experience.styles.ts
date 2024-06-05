@@ -25,7 +25,7 @@ export const StyledWrapperHow = styled.div`
 `;
 
 export const StyledWrapperHowImage = styled.div`
-    margin: 0 auto;
+    margin: 100px auto;
     width: 100%;
 
     ${breakpoint.lg} {
@@ -40,7 +40,7 @@ export const StyledWrapperHowImage = styled.div`
 
         ${breakpoint.lg} {
             max-width: 700px;
-            min-height: 600px;
+            min-height: 800px;
             height: 100%;
         }
     }

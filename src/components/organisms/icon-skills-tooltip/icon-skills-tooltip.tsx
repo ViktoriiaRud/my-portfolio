@@ -15,7 +15,7 @@ import Icon from "../../atoms/icon";
 import {TypographySubtitleKb, TypographyTitle} from "../project-card/project-card.styles";
 
 const IconSkillsTooltip = ({  icons }: IconSkillsTooltipType) => (
-  <StyledWrapper>
+  <StyledWrapper id={'skills'}>
       <StyledWrapperText>
           <TypographyTitle html={'Skills'} variant="title_6" />
           <TypographySubtitleKb html={'I use at work'} variant="title_3" color={'white'}/>

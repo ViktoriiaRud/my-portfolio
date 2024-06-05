@@ -67,3 +67,19 @@ export type IconSkillsTooltipType = {
         description: string;
     }[];
 };
+
+export type ContactFormType = {
+    name: string;
+    email: string;
+    message: string;
+    button: string;
+    hrefButton: string;
+};
+
+export type ContactType = {
+    subtitle: string;
+    email: string;
+    emailTitle: string;
+    phone: string;
+    phoneNumber: string;
+};

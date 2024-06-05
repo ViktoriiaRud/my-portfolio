@@ -10,8 +10,10 @@
   "dependencies": {
     "@loadable/component": "^5.16.4",
     "@types/react-hamburger-menu": "^0.0.6",
+    "formik": "^2.4.6",
     "gatsby": "^5.0.0",
     "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "html-react-parser": "^5.1.8",
@@ -20,7 +22,8 @@
     "react-dom": "^18.2.0",
     "react-hamburger-menu": "^1.2.1",
     "sanitize-html": "^2.12.1",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.28",

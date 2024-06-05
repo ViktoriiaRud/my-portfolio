@@ -22,8 +22,7 @@ export const theme = {
         gray: '#575757',
         gray2: '#C2C4BF',
         gray3: '#ADADAD',
-        rosybrown: '#C54B73',
-        rosybrownDark: '#8C2C61',
+        background: '#212529',
         rosy: '#FCC5BF',
         blueDark: '#152356',
         blueDark5: '#223581',
@@ -32,7 +31,6 @@ export const theme = {
         backgroundPink: '#F7EDF4',
         backgroundColor: '#FFF8F0',
         yellow: '#E1D614',
-        lightblue: '#B5C3F2',
         orange: '#F0700F',
     },
 
