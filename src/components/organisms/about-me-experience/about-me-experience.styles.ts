@@ -59,15 +59,13 @@ export const StyledWrapperImg = styled.div`
 `;
 
 export const StyledTypographyDescription = styled(Typography)`
-  font-family: ${({ theme }) => theme.font3};
+  font-family: ${({ theme }) => theme.description};
   margin-top: 10px;
-  line-height: 35px;
 
   .bold {
-    font-family: ${({ theme }) => theme.font3};
-    font-size: 16px;
+    font-family: ${({ theme }) => theme.fontBold};
     font-weight: 800;
-    letter-spacing: 0.05em;
+    font-style: italic;
   }
 `;
 

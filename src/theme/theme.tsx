@@ -2,6 +2,8 @@ export const theme = {
     font1: 'Limelight',
     font2: 'KbLimelight',
     font3: 'Sassoon-Infant-Std',
+    description: 'Roboto-Regular',
+    fontBold: 'Roboto-Bold',
     fontSize: '16px',
     wrapperXxs: '328px',
     wrapperXll: '546px',

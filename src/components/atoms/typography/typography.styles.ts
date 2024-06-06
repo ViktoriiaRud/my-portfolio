@@ -79,8 +79,8 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
         
     &[data-variant='description'] {
         font-size: 18px;
-        font-weight: 300;
-        line-height: 26px;
-        letter-spacing: 0.05em;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.09em;
     }
 `;

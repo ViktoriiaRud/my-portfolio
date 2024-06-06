@@ -1,3 +1,5 @@
+import myLogo from "../assets/logo/logo-new/logo_transparent.png";
+
 export type ProjectCardType = {
     contentCard: {
         cards: {
@@ -82,4 +84,10 @@ export type ContactType = {
     emailTitle: string;
     phone: string;
     phoneNumber: string;
+    srcImage: {};
+    altText: string;
+    linksSocial: {
+        url: string;
+        icon: string;
+    }[];
 };

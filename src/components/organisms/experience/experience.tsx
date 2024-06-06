@@ -41,7 +41,7 @@ const Experience = ({title, subTitle, srcImage, altText, subtitle2, subtitle4, s
                         </TypographyDescription>
                         <TypographySubtitle html={subtitle13} variant={'title_5'}/>
                         <TypographyData html={subtitle14} variant={'title_4'}/>
-                        <TypographyDescription>
+                        <TypographyDescription variant={'description'}>
                             {subtitle15}
                             <br/>
                             {subtitle16}

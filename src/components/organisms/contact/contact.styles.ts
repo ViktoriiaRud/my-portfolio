@@ -21,39 +21,18 @@ export const StyledTitleFormContact = styled.div`
 
     ${breakpoint.md} {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     }
 `;
 
-export const StyledWrapperTitle = styled.div`
-    padding: 50px 40px 20px;
-    max-width: 686px;
+export const StyledWrapperTitleSocial = styled.div`
+    padding: 60px 40px 20px;
+    max-width: 590px;
     width: 100%;
     background: linear-gradient(90deg, rgba(252, 74, 26, 1) 0%, rgba(247, 183, 51, 1) 100%);
     border-radius: 10px;
 `;
 
-export const TypographyContactTitle = styled(Typography)`
-    font-family: ${({theme}) => theme.font3};
-    max-width: 491px;
-    line-height: 42px;
-    text-align: center;
-
-    ${breakpoint.md} {
-        text-align: unset;
-        max-width: 471px;
-    }
-`;
-
-export const TypographyContactDescription = styled(Typography)`
-    font-family: ${({theme}) => theme.font3};
-    max-width: 459px;
-    text-align: center;
-
-    ${breakpoint.md} {
-        text-align: unset;
-    }
-`;
 
 export const TypographyContactSubtitle = styled(Typography)`
     font-family: ${({theme}) => theme.font3};
@@ -97,3 +76,38 @@ export const StyledWrapperForm = styled.div`
         width: 50%;
     }
 `;
+
+export const StyledWrapperSocial = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
+export const WrapperSocialIcon = styled.div`
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: ${({theme}) => theme.colors.white};
+    border-radius: 20%;
+`;
+
+export const StyledWrapperTitleLogo = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
+export const WrapperLogo = styled.div`
+    max-width: 150px;
+    height: 150px;
+    
+    img {
+        border-radius: 50%;  
+    }
+`;
+
+export const WrapperTitle = styled.div`
+margin-left: 40px`;

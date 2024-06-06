@@ -5,4 +5,8 @@ export const iconNames = [
   'tooltip-javascript',
   'tooltip-next',
   'tooltip-typescript',
+  'github',
+  'linkedin',
+  'telegram',
+  'facebook',
 ];

@@ -9,6 +9,8 @@ import ImgExperience from '../assets/image/pexels-mizunokozuki-12899196.jpg';
 import AboutMeExperienceImg from '../assets/image/myPhoto.png';
 import {MenuType} from "../types/header";
 import BannerImgWork from '../assets/image-background/pexels1.jpg';
+import myLogo from "../assets/logo/logo-new/logo.png";
+
 
 export const dataExperience: ExperienceType = {
     srcImage: ImgExperience,
@@ -48,20 +50,13 @@ export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
 export const dataAboutMeExperience: AboutMeExperienceType = {
     subtitle: 'About me',
     title: "My name is Viktoriia Rudneva",
-    description: 'I am a dedicated and aspiring',
-    description2: ' Front-end Developer with one year\n' +
+    description: 'I am a dedicated and success-oriented',
+    description2: ' Front-end Developer with over one year\n' +
         'of professional experience at For Better Future Software House.',
-    description3: ' I\n' +
-        'am proficient in developing web pages and online stores,\n' +
-        'specializing in React and utilizing additional technologies such as\n' +
-        'Typescript and Gatsby to enhance project functionality.\n' +
-        'Demonstrated versatility by successfully creating an online store\n' +
-        'using Magento 2. I acquired valuable experience as a freelance\n' +
-        'developer by delivering two one-page websites (Landing Pages)\n' +
-        'before joining the company.',
-    description4: 'I am committed to staying abreast of\n' +
-        'industry trends and continually expanding my skills to contribute\n' +
-        'effectively to dynamic development projects.',
+    description3: ' I have skills in web and e-commerce development, specializing in React and using additional' +
+        ' technologies such as Typescript and Gatsby to enhance the project functionality. I also have experience with Magento 2.\n' +
+        'I gained valuable experience as a freelance developer by developing two single-page websites (landing pages) before joining the company.',
+    description4: 'I strive to stay current with industry trends and continually expand my skills to effectively contribute to dynamic development projects.',
     srcImage: AboutMeExperienceImg,
     altText: 'AboutMe',
 }
@@ -130,4 +125,24 @@ export const dataContact: ContactType = {
     emailTitle: 'viktoriiadeveloper@gmail.com',
     phone: 'phone',
     phoneNumber: '+48 731 148 433',
+    srcImage: myLogo,
+    altText: "logo",
+    linksSocial: [
+        {
+            url: 'https://github.com/ViktoriiaRud',
+            icon: 'github',
+        },
+        {
+            url: 'https://www.linkedin.com/in/viktoriia-rudneva',
+            icon: 'linkedin',
+        },
+        {
+            url: 'https://t.me/ViktoriiaRudneva_pl',
+            icon: 'telegram',
+        },
+        {
+            url: 'https://www.facebook.com/rudnevaviktoriia',
+            icon: 'facebook',
+        },
+    ],
 };

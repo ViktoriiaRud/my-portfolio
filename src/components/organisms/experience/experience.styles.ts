@@ -58,7 +58,7 @@ export const TypographySubtitle = styled(Typography)`
 
 
 export const TypographyDescription = styled(Typography)`
-  font-family: ${({ theme }) => theme.font3};
+  font-family: ${({ theme }) => theme.description};
   margin-top: 25px;
   max-width: 100%;
     

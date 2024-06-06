@@ -37,3 +37,19 @@
     src: url('Sassoon-Infant-Std/Sassoon-Infant-Std.woff2') format('woff2');
     font-display: swap;
 }
+
+@font-face {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url('Roboto-Regular/Roboto-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    font-style: normal;
+    font-weight: 800;
+    src: url('Roboto-Bold/Roboto-Bold.woff2') format('woff2');
+    font-display: swap;
+}
