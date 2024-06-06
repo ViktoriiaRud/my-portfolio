@@ -8,6 +8,7 @@ import {
   StyledWrapperTooltip,
   Tooltip,
   StyledWrapperText,
+  StyledIconFront,
 } from './icon-skills-tooltip.styles';
 
 import {IconSkillsTooltipType} from "../../../types/components";
@@ -24,11 +25,13 @@ const IconSkillsTooltip = ({  icons }: IconSkillsTooltipType) => (
       {icons
         ? icons.map((icon) => (
             <IconContainer key={icon.name}>
-              <Icon name={icon.name} />
+                <StyledIconFront>
+                    <Icon name={icon.name} />
+                </StyledIconFront>
               <Tooltip>
                 <SmallIcon name={icon.name} />
                 <StyledTooltipTitle html={icon.title} variant="title_5" color={'orange'} />
-                <StyledTooltipDescription html={icon.description} variant="body6" />
+                <StyledTooltipDescription html={icon.description} variant="title_8" />
               </Tooltip>
             </IconContainer>
           ))

@@ -47,8 +47,9 @@ export const TypographyEmailSubtitle = styled(Typography)`
 `;
 
 export const TypographyEmailTitle = styled(Typography)`
-    font-family: ${({theme}) => theme.font3};
+    font-family: ${({theme}) => theme.description};
     line-height: 18px;
+    font-style: italic;
 `;
 
 export const TypographyPhoneSubtitle = styled(Typography)`
@@ -67,10 +68,6 @@ export const StyledWrapperForm = styled.div`
     height: 100%;
     width: 100%;
     position: relative;
-
-    ${breakpoint.md} {
-        width: 50%;
-    }
 
     ${breakpoint.lg} {
         width: 50%;
@@ -96,18 +93,28 @@ export const WrapperSocialIcon = styled.div`
 
 export const StyledWrapperTitleLogo = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
+    ${breakpoint.lg} {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `;
 
 export const WrapperLogo = styled.div`
     max-width: 150px;
     height: 150px;
+    margin: 20px auto;
     
+    ${breakpoint.lg} {
+        margin: 0;
+    }
+
     img {
-        border-radius: 50%;  
+        border-radius: 50%;
     }
 `;
 
 export const WrapperTitle = styled.div`
-margin-left: 40px`;
+    margin-left: 20px;
+`;

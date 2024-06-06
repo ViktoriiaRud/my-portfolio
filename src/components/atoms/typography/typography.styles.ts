@@ -14,10 +14,10 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
     }
 
     &[data-variant='title'] {
-        font-size: 54px;
+        font-size: 66px;
         font-weight: 400;
-        line-height: 72px;
-        letter-spacing: 0;
+        line-height: 88px;
+        letter-spacing: 6px;
     }
 
     &[data-variant='title_2'] {
@@ -65,10 +65,6 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
 
     &[data-variant='title06'] {
         font-size: 13px;
-
-        ${breakpoint.md} {
-            font-size: 13px;
-        }
     }
 
     &[data-variant='title_7'] {
@@ -82,5 +78,12 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0.09em;
+    }
+
+    &[data-variant='title_8'] {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.04em;
     }
 `;

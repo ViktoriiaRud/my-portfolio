@@ -15,6 +15,7 @@ export type TypographyVariantType =
   | 'title_6'
   | 'title06'
   | 'title_7'
+  |'title_8'
   | 'description';
 
 export type TypographyComponentType = 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'div' | 'li' | 'cite';
