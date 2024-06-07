@@ -37,7 +37,7 @@ const Contact = ({
                      altText,
                  }: ContactType) => {
     return (
-        <WrapperContact>
+        <WrapperContact id={'contact'}>
             <Container>
                 <StyledContact>
                     <StyledTitleFormContact>

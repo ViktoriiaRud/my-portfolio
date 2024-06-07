@@ -31,12 +31,12 @@ const FormContact = ({
             >
                 <Form>
                     <StyledWrapperForm>
-                        <Field type="name" name={name}/>
                         <StyledTypographyInput html={name} variant="body8"/>
-                        <Field type="email" name={email}/>
+                        <Field type="name" name={name}/>
                         <StyledTypographyInput html={email} variant="body8"/>
-                        <Field className='message' type="message" name={message}/>
+                        <Field type="email" name={email}/>
                         <StyledTypographyInput html={message} variant="body8"/>
+                        <Field className='message' type="message" name={message}/>
                     </StyledWrapperForm>
                     <StyledButtonWidth>
                         <StyledWrapperButton>

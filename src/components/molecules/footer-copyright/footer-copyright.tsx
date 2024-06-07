@@ -6,13 +6,9 @@ import {
     StyledDataWrapper,
     StyledDataYear,
     StyledDeveloper,
-    StyledPolicy,
-    StyledPolicyWrapper,
     StyledTypographyLeft,
-    StyledTypographyRight,
     StyledName,
 } from './footer-copyright.styles';
-import {Link} from "gatsby";
 
 export type FooterCopyrightType = {
     titlePortfolio: string;
@@ -39,13 +35,6 @@ const FooterCopyright = ({titlePortfolio, titleName, titlePrivacy, titleDevelope
                     <StyledTypographyLeft html={titleName} variant="title_4" color={'white'}/>
                 </StyledName>
             </StyledDataWrapper>
-            <StyledPolicyWrapper>
-                <StyledPolicy>
-                    <Link to={url}>
-                        <StyledTypographyRight html={titlePrivacy} variant="title_4" color={'white'}/>
-                    </Link>
-                </StyledPolicy>
-            </StyledPolicyWrapper>
         </StyledCopyrightWrapper>
     </>
 );

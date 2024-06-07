@@ -14,10 +14,14 @@ export const StyledTypography = styled.div<Pick<TypographyType, 'color'>>`
     }
 
     &[data-variant='title'] {
-        font-size: 66px;
+        font-size: 48px;
         font-weight: 400;
         line-height: 88px;
-        letter-spacing: 6px;
+        letter-spacing: 1px;
+
+        ${breakpoint.lg} {
+            font-size: 66px;
+        }
     }
 
     &[data-variant='title_2'] {
