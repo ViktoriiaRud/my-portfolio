@@ -18,19 +18,27 @@ export const StyledContact = styled.div`
 export const StyledTitleFormContact = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-    ${breakpoint.md} {
+    ${breakpoint.lg} {
         flex-direction: row;
         justify-content: center;
+        gap: 0;
     }
 `;
 
 export const StyledWrapperTitleSocial = styled.div`
-    padding: 60px 40px 20px;
+    padding: 50px 10px 10px;
     max-width: 590px;
     width: 100%;
     background: linear-gradient(90deg, rgba(252, 74, 26, 1) 0%, rgba(247, 183, 51, 1) 100%);
     border-radius: 10px;
+    
+    ${breakpoint.md} {
+        padding: 60px 40px 20px;
+    }
 `;
 
 
@@ -67,7 +75,6 @@ export const TypographyPhoneNumber = styled(Typography)`
 export const StyledWrapperForm = styled.div`
     height: 100%;
     width: 100%;
-    position: relative;
 
     ${breakpoint.lg} {
         width: 50%;

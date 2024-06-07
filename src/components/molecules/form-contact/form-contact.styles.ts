@@ -3,14 +3,12 @@ import {breakpoint} from '../../../theme';
 import Typography from '../../atoms/typography';
 
 export const WrapperFormContact = styled.div`
-    max-width: 344px;
+    display: block;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
-
-    ${breakpoint.lg} {
-        max-width: 505px;
-        min-height: 466px;
-    }
+    max-width: 505px;
+    min-height: 466px;
 `;
 
 export const StyledButtonWidth = styled.div`
@@ -19,9 +17,13 @@ export const StyledButtonWidth = styled.div`
 `;
 
 export const StyledWrapperForm = styled.div`
-    padding: 50px 30px 0 30px;
+    padding: 0;
     display: flex;
     flex-direction: column;
+
+    ${breakpoint.lg} {
+        padding-top: 20px;
+    }
 
     .message {
         min-height: 180px;
