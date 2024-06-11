@@ -115,6 +115,6 @@ export const StyledIconFront = styled.div`
     background-color: ${({theme}) => theme.colors.white};
     box-shadow: 0 14px 24px 0 #00000040;
     transition: opacity 0.6s, visibility 0.6s;
-    z-index: 10;
+    z-index: 0;
     border-radius: 10px;
 `;
