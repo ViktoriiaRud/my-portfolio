@@ -19,6 +19,7 @@ export const StyledButton = styled.a<ButtonPropsType>`
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: ease;
+  border-radius: 4px;
   
 
   ${({ variant }) => {
@@ -28,35 +29,20 @@ export const StyledButton = styled.a<ButtonPropsType>`
           'background-color: #F0700F; color: #FFFFFF; ' +
           ' &:hover {background-color: #FCC5BF; color: #000000;}'
         );
-
-      case 'lightpink':
-        return (
-          'background-color: #FCDEEF; color: #FFFFFF; ' +
-          ' &:hover {background-color: #C54B73; color: #000000;}'
-        );
-
-      case 'greenyellow':
-        return (
-            'background-color: #C2EC22; color: #FFFFFF; ' +
-            ' &:hover {background-color: #C54B73; color: #000000;}'
-        );
-
+        
       case 'blue':
         return (
             'background-color: #225E81; color: #FFFFFF; ' +
             ' &:hover {background-color: #689CA1; color: #000000;}'
         );
 
-      case 'transparent':
-        return (
-            'background-color: transparent; color: #FFFFFF; ' +
-            ' &:hover {color: #C2C4BF;}'
-        );
-
       case 'gray':
         return (
           'background-color: #575757; color: #FFFFFF;' +
-          ' &:hover {background-color: #C2C4BF; color: #000000;}'
+          ' &:hover {background-color: #C2C4BF; color: #000000; text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);\n' +
+          '-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);\n' +
+          '-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);\n' +
+          'transition: all 0.4s ease 0s;}'
         );
     }
   }}
