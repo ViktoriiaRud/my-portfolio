@@ -50,6 +50,20 @@ export const StyledWrapperImg = styled.div`
     height: 410px;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  }
+  
+  &:hover img{
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+  }
+  
+  &:hover .glow{
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  &:hover img{
+    margin-top: 0;
   }
 
   ${breakpoint.lg} {

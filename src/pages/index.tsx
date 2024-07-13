@@ -33,7 +33,7 @@ const IndexPage = () => {
                 to="/another-page/"
                 onEnter={handleEnter}
                 onExit={handleExit}
-            ></TransitionLink>
+            >
             <AboutMe {...dataAboutMe}/>
             <AboutMeExperience {...dataAboutMeExperience}/>
             <ProjectCard {...dataProjectCard}/>
@@ -41,6 +41,7 @@ const IndexPage = () => {
             <IconSkillsTooltip {...dataIconSkillsTooltip}/>
             <Experience {...dataExperience}/>
             <Contact{...dataContact}/>
+            </TransitionLink>
         </Layout>
     );
 };

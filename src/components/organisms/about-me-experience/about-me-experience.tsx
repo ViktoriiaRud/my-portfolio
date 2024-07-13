@@ -29,9 +29,12 @@ const AboutMeExperience = ({
             <StyledWrapperAboutMeExperience >
                 <StyledWrapperImg>
                     <img src={srcImage} alt={altText}/>
+                    <div className="glow-wrap">
+                        <i className="glow"></i>
+                    </div>
                 </StyledWrapperImg>
                 <StyledWrapperTitle>
-                    <TypographySubtitle html={subtitle} variant="title_6"/>
+                <TypographySubtitle html={subtitle} variant="title_6"/>
                     <TypographyTitle html={title} variant="title_3" color={'orange'}/>
                     <StyledTypographyDescription variant="description">
                         {description}
