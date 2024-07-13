@@ -14,26 +14,24 @@ export type FooterCopyrightType = {
     titlePortfolio: string;
     titleDeveloper: string;
     titleName: string;
-    titlePrivacy: string;
-    url: string;
 };
 
-const FooterCopyright = ({titlePortfolio, titleName, titlePrivacy, titleDeveloper, url}: FooterCopyrightType) => (
+const FooterCopyright = ({titlePortfolio, titleName, titleDeveloper}: FooterCopyrightType) => (
     <>
         <StyledCopyrightWrapper>
             <StyledDataWrapper>
                 <StyledDataYear>
-                    <StyledTypographyLeft variant={"title_4"} color={'white'}>{new Date().getFullYear()}</StyledTypographyLeft>
+                    <StyledTypographyLeft variant={"title06"} color={'white'}>Copyright © {new Date().getFullYear()}</StyledTypographyLeft>
                 </StyledDataYear>
                 <StyledPortfolio>
-                    <StyledTypographyLeft html={titlePortfolio} variant="title_4" color={'white'}/>
+                    <StyledTypographyLeft html={titlePortfolio} variant="title06" color={'white'}/>
                 </StyledPortfolio>
-                <StyledDeveloper>
-                    <StyledTypographyLeft html={titleDeveloper} variant="title_4" color={'white'}/>
-                </StyledDeveloper>
                 <StyledName>
-                    <StyledTypographyLeft html={titleName} variant="title_4" color={'white'}/>
+                    <StyledTypographyLeft html={titleName} variant="title06" color={'white'}/>
                 </StyledName>
+                <StyledDeveloper>
+                    <StyledTypographyLeft html={titleDeveloper} variant="title06" color={'white'}/>
+                </StyledDeveloper>
             </StyledDataWrapper>
         </StyledCopyrightWrapper>
     </>

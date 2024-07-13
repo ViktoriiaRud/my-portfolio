@@ -8,14 +8,13 @@ export const StyledCopyrightWrapper = styled.div`
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: ${({theme}) => theme.gap.smd};
 
     ${breakpoint.md} {
         flex-direction: row;
         flex-wrap: wrap;
         max-width: ${({theme}) => theme.wrapperLg};
-        justify-content: space-between;
         gap: ${({theme}) => theme.gap.sm};
     }
 
@@ -49,7 +48,8 @@ export const StyledDataWrapper = styled.div`
   }
 `;
 
-export const StyledDataYear = styled.div``;
+export const StyledDataYear = styled.div`
+`;
 
 export const StyledPortfolio = styled.div`
   position: relative;
@@ -70,24 +70,3 @@ export const StyledDeveloper = styled(StyledPortfolio)``;
 
 
 export const StyledName = styled(StyledPortfolio)``;
-
-
-export const StyledPolicy = styled.div``;
-
-export const StyledPolicyWrapper = styled.div`
-  font-family: ${({ theme }) => theme.font2};
-  margin: 0 auto;
-  max-width: 281px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: ${({ theme }) => theme.gap.md};
-
-  ${breakpoint.md} {
-    justify-content: space-between;
-  }
-
-  ${breakpoint.lg} {
-    margin: 0;
-  }
-`;

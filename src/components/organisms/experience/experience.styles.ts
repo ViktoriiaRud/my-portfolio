@@ -42,6 +42,7 @@ export const StyledWrapperHowImage = styled.div`
             max-width: 700px;
             min-height: 800px;
             height: 100%;
+            box-shadow: 50px -50px #F0700F;
         }
     }
 `;

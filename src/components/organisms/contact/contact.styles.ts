@@ -35,6 +35,7 @@ export const StyledWrapperTitleSocial = styled.div`
     width: 100%;
     background: linear-gradient(90deg, rgba(252, 74, 26, 1) 0%, rgba(247, 183, 51, 1) 100%);
     border-radius: 10px;
+    box-shadow: rgba(240, 112, 15, 1) 5px 5px, rgba(247, 183, 51, 1) 10px 10px, rgba(240, 112, 15, 1) 15px 15px, rgba(247, 183, 51, 1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     
     ${breakpoint.md} {
         padding: 60px 40px 20px;
@@ -94,7 +95,6 @@ export const WrapperSocialIcon = styled.div`
     align-items: center;
     width: 50px;
     height: 50px;
-    background: ${({theme}) => theme.colors.white};
     border-radius: 20%;
 `;
 
