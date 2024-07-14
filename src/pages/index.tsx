@@ -4,7 +4,6 @@ import AboutMe from "../components/organisms/about-me";
 import {dataAboutMe, dataProjectCard} from "../data/data-main-page";
 import ProjectCard from "../components/organisms/project-card";
 import Experience from "../components/organisms/experience";
-import TransitionLink from 'gatsby-plugin-transition-link';
 
 import {
     dataAboutMeExperience,
@@ -17,23 +16,12 @@ import AboutMeExperience from "../components/organisms/about-me-experience";
 import BannerWork from "../components/organisms/banner-work";
 import IconSkillsTooltip from "../components/organisms/icon-skills-tooltip";
 import Contact from "../components/organisms/contact";
-import {useState} from "react";
-import LoadingSpinner from "../components/molecules/loading-spinner";
+import Preloader from "../components/molecules/pre-loader";
 
 const IndexPage = () => {
-    const [loading, setLoading] = useState(false);
-
-    const handleEnter = () => setLoading(true);
-    const handleExit = () => setLoading(false);
-
     return (
         <Layout>
-            {loading && <LoadingSpinner />}
-            <TransitionLink
-                to="/another-page/"
-                onEnter={handleEnter}
-                onExit={handleExit}
-            >
+            <Preloader />
             <AboutMe {...dataAboutMe}/>
             <AboutMeExperience {...dataAboutMeExperience}/>
             <ProjectCard {...dataProjectCard}/>
@@ -41,7 +29,6 @@ const IndexPage = () => {
             <IconSkillsTooltip {...dataIconSkillsTooltip}/>
             <Experience {...dataExperience}/>
             <Contact{...dataContact}/>
-            </TransitionLink>
         </Layout>
     );
 };
