@@ -16,12 +16,10 @@ import AboutMeExperience from "../components/organisms/about-me-experience";
 import BannerWork from "../components/organisms/banner-work";
 import IconSkillsTooltip from "../components/organisms/icon-skills-tooltip";
 import Contact from "../components/organisms/contact";
-import Preloader from "../components/molecules/pre-loader";
 
 const IndexPage = () => {
     return (
         <Layout>
-            <Preloader />
             <AboutMe {...dataAboutMe}/>
             <AboutMeExperience {...dataAboutMeExperience}/>
             <ProjectCard {...dataProjectCard}/>
