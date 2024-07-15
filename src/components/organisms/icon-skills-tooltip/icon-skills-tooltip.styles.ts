@@ -70,7 +70,7 @@ export const Tooltip = styled.div`
     opacity: 0;
     box-shadow: 0 14px 24px 0 #00000040;
     visibility: hidden;
-    transition: opacity 0.6s, visibility 0.6s;
+    transition: opacity 0.2s, visibility 0.2s;
     z-index: 10;
     border-radius: 10px;
     border: 1px;
@@ -105,6 +105,8 @@ export const StyledWrapperText = styled.div`
 
 export const StyledIconFront = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -114,7 +116,6 @@ export const StyledIconFront = styled.div`
     padding: 30px;
     background-color: ${({theme}) => theme.colors.white};
     box-shadow: 0 14px 24px 0 #00000040;
-    transition: opacity 0.6s, visibility 0.6s;
-    z-index: 0;
+    z-index: 10;
     border-radius: 10px;
 `;
