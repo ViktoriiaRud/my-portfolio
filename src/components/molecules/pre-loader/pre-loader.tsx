@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { PreloaderWrapper, Container, Ring, LoadingText } from './pre-loader.styles';
 
 const Preloader = () => {
-    const [loading, setLoading] = useState(true);
 
     return (
         <PreloaderWrapper>
