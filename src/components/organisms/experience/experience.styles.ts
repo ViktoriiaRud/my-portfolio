@@ -32,7 +32,7 @@ export const StyledWrapperHowImage = styled.div`
         width: 50%;
         max-width: 700px;
     }
-    
+
     img {
         object-fit: cover;
         width: 100%;
@@ -42,7 +42,7 @@ export const StyledWrapperHowImage = styled.div`
             max-width: 700px;
             min-height: 800px;
             height: 100%;
-            box-shadow: 50px -50px #F0700F;
+            box-shadow: 60px -60px #575757;
         }
     }
 `;
@@ -57,12 +57,11 @@ export const TypographySubtitle = styled(Typography)`
   font-family: ${({ theme }) => theme.font3};
 `;
 
-
 export const TypographyDescription = styled(Typography)`
   font-family: ${({ theme }) => theme.description};
   margin-top: 25px;
   max-width: 100%;
-    
+
     ${breakpoint.lg} {
         max-width: 820px;
     }

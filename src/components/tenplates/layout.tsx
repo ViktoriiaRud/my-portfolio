@@ -6,18 +6,18 @@ import '../../theme/fonts/fonts.css';
 import Footer from "../organisms/footer";
 import MyHeader from "../organisms/my-header";
 import {dataHeader} from "../../data/data-header";
-import Preloader from "../molecules/pre-loader";
+import SmoothScrollButton from "../atoms/smooth-scroll-button";
 
 
 type LayoutType = {};
 
 const Layout = ({ children }: React.PropsWithChildren<LayoutType>) => (
     <ThemeProvider theme={theme}>
-        <Preloader />
         <GlobalStyle />
         <MyHeader {...dataHeader}/>
         <main>{children}</main>
         <Footer/>
+        <SmoothScrollButton />
     </ThemeProvider>
 );
 
