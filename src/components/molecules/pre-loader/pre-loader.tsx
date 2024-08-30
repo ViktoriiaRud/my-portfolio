@@ -4,16 +4,6 @@ import { PreloaderWrapper, Container, Ring, LoadingText } from './pre-loader.sty
 const Preloader = () => {
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
-    }, []);
-
-    if (!loading) {
-        return null;
-    }
-
     return (
         <PreloaderWrapper>
             <Container>
