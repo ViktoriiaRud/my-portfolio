@@ -9,11 +9,17 @@ import {dataHeader} from "../../data/data-header";
 import SmoothScrollButton from "../atoms/smooth-scroll-button";
 
 
+
 type LayoutType = {};
 
 const Layout = ({ children }: React.PropsWithChildren<LayoutType>) => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
+            <script
+                defer
+                src="https://cloud.umami.is/script.js"
+                data-website-id="269619fe-245e-4207-a8c6-7710fd78768a"
+            ></script>
         <MyHeader {...dataHeader}/>
         <main>{children}</main>
         <Footer/>
