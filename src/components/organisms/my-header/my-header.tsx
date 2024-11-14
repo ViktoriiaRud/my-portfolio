@@ -4,7 +4,6 @@ import {Link} from "gatsby";
 import Button from "../../atoms/button";
 import {dataMenu} from "../../../data/data-page";
 import Menu from "../../molecules/menu";
-import Preloader from '../../molecules/pre-loader';
 
 import {dataHeader} from "../../../data/data-header";
 
@@ -25,14 +24,7 @@ export type MyHeaderType = {
 };
 
 const MyHeader = () => {
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => setIsLoading(false), 2000);
-    }, [])
     return <>
-    {
-        isLoading ? <Preloader/> : 
         <StyledColorHeader>
             <Container>
                 <StyledWrapperHeader>
@@ -55,7 +47,6 @@ const MyHeader = () => {
                 </StyledWrapperHeader>
             </Container>
         </StyledColorHeader>
-    }
     </>
 };
 

@@ -25,8 +25,8 @@ const IndexPage = () => {
         setTimeout(() => setIsLoading(false), 2000);
     }, []);
     return (
-        <Layout>
-            {isLoading ? <Preloader/> : <div>
+        <>
+            {isLoading ? <Preloader/> : <Layout>
             <AboutMe {...dataAboutMe}/>
             <AboutMeExperience {...dataAboutMeExperience}/>
             <ProjectCard {...dataProjectCard}/>
@@ -34,8 +34,8 @@ const IndexPage = () => {
             <IconSkillsTooltip {...dataIconSkillsTooltip}/>
             <Experience {...dataExperience}/>
             <Contact {...dataContact}/>
-            </div>}
-        </Layout>
+            </Layout>}
+        </>
     );
 };
 
