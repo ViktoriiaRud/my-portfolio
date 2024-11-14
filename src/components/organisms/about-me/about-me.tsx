@@ -14,6 +14,11 @@ import ButtonDoubleBlue from "../../molecules/button-double-blue";
 import {dataButtonDoubleBlue} from "../../../data/data-page";
 
 export type AboutMeType = {
+    subtitle: string;
+    altText: string;
+    title: string;
+    srcImage: string;
+
 };
 
 const AboutMe = ({subtitle, altText, title, srcImage}: AboutMeType) => {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Layout from "../components/tenplates/layout";
+import Layout from "../components/templates/layout";
 import AboutMe from "../components/organisms/about-me";
 import {dataAboutMe, dataProjectCard} from "../data/data-main-page";
 import ProjectCard from "../components/organisms/project-card";
