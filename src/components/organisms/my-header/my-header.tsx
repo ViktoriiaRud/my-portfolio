@@ -1,4 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Container from "../../atoms/container";
+import {Link} from "gatsby";
+import Button from "../../atoms/button";
+import {dataMenu} from "../../../data/data-page";
+import Menu from "../../molecules/menu";
+import Preloader from '../../molecules/pre-loader';
+
+import {dataHeader} from "../../../data/data-header";
 
 import {
     StyledColorHeader,
@@ -7,16 +15,6 @@ import {
     StyledButtonWidth,
     StyledButtonNav
 } from './my-header.styles';
-
-import Container from "../../atoms/container";
-import {Link} from "gatsby";
-import {
-    dataHeader,
-} from "../../../data/data-header";
-
-import Button from "../../atoms/button";
-import {dataMenu} from "../../../data/data-page";
-import Menu from "../../molecules/menu";
 
 export type MyHeaderType = {
     srcImage?: {};
@@ -27,7 +25,14 @@ export type MyHeaderType = {
 };
 
 const MyHeader = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => setIsLoading(false), 2000);
+    }, [])
     return <>
+    {
+        isLoading ? <Preloader/> : 
         <StyledColorHeader>
             <Container>
                 <StyledWrapperHeader>
@@ -50,6 +55,7 @@ const MyHeader = () => {
                 </StyledWrapperHeader>
             </Container>
         </StyledColorHeader>
+    }
     </>
 };
 
