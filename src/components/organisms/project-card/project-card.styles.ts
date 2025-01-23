@@ -27,7 +27,6 @@ export const StyledContainerCard = styled.div`
     padding-bottom: 50px;
 
     ${breakpoint.lg} {
-        flex-wrap: unset;
         justify-content: center;
         margin: 0 auto;
         padding-bottom: 0;

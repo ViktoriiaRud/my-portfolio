@@ -22,7 +22,7 @@ const IndexPage = () => {
     const [isLoading, setIsLoading] =useState(true)
 
     useEffect(() => {
-        setTimeout(() => setIsLoading(false), 2000);
+        setTimeout(() => setIsLoading(false), 3000);
     }, []);
     return (
         <>

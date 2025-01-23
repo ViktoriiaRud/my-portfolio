@@ -2,6 +2,7 @@ import myImage from '../assets/image-background/pexels-junior-teixeira.jpg';
 import ProjectImg1 from '../assets/image/project-gen-b.png';
 import ProjectImg2 from '../assets/image/project2.png';
 import ProjectImg3 from '../assets/image/project1.png';
+import ProjectImg4 from '../assets/image/Houstipster.png';
 
 export const dataAboutMe: {
     srcImage: {};
@@ -31,9 +32,18 @@ export const dataProjectCard: {
     contentCard: {
         cards: [
             {
+                name: 'Housetipster',
+                title: 'Housetipster',
+                description: "Creating with team. I used Magento 2, JavaScript, XML, jQuery, Docker.",
+                titleButton: 'read more',
+                hrefButton: 'https://housetipster.com/',
+                srcImage: ProjectImg4,
+                altText: 'Project-GEN-B',
+            },
+            {
                 name: 'Project-GEN-B',
                 title: 'Project-GEN-B',
-                description: "I used CSS, StyledComponents, React, TypeScript, and Gatsby. ",
+                description: "I used CSS, XML, StyledComponents, React, TypeScript, and Gatsby. ",
                 titleButton: 'read more',
                 hrefButton: 'https://project-gen-b.vercel.app',
                 srcImage: ProjectImg1,
@@ -42,7 +52,7 @@ export const dataProjectCard: {
             {
                 name: 'Restaurant',
                 title: 'Restaurant',
-                description: "I used CSS, StyledComponents, React, TypeScript, and Gatsby",
+                description: "I used CSS, XML, StyledComponents, React, TypeScript, and Gatsby",
                 titleButton: 'read more',
                 hrefButton: 'https://restaraunt-seven.vercel.app',
                 srcImage: ProjectImg2,
@@ -51,7 +61,7 @@ export const dataProjectCard: {
             {
                 name: 'Trip',
                 title: 'Trip',
-                description: "I used CSS, StyledComponents, React",
+                description: "I used CSS, XML, StyledComponents, React",
                 titleButton: 'read more',
                 hrefButton: 'https://trip-mu.vercel.app',
                 srcImage: ProjectImg3,
