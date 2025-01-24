@@ -23,38 +23,43 @@ export const StyledContainerCard = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     padding-bottom: 50px;
 
     ${breakpoint.lg} {
-        justify-content: center;
         margin: 0 auto;
         padding-bottom: 0;
+    }
+
+    ${breakpoint.xxl} {
+        justify-content: space-between;
+        width: 100%;
     }
 `;
 
 export const Card = styled.div`
     width: 100%;
     height: 100%;
-    max-width: 480px;
-    min-height: 294px;
+    max-width: 680px;
+    min-height: 420px;
+    background-color: ${({theme}) => theme.colors.grayCard};
+    margin-bottom: 40px;
 `;
 
 export const StyledContentCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 22px;
-    max-width: 480px;
-    min-height: 294px;
+    gap: 10px;
+    max-width: 680px;
+    min-height: 420px;
     width: 100%;
     height: 100%;
-    padding: 35px 30px 60px 30px;
-    background-color: ${({theme}) => theme.colors.greenyellow};
+    padding: 35px 30px 0px 30px;
+    background-color: ${({theme}) => theme.colors.grayCard};
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: ease;
-    border: 1px solid ${({theme}) => theme.colors.orange};
 `;
 
 export const WrapperImgFront = styled.div``;
@@ -73,23 +78,23 @@ export const TypographyTitleDescription = styled(Typography)`
     margin: 20px 10px 20px;
     line-height: 32px;
     text-align: center;
+    min-height: 259px;
 `;
 
 export const StyledImgFront = styled.div`
-    max-width: 480px;
     width: 100%;
     height: 100%;
 
     img {
         width: 100%;
-        height: 300px;
+        height: 420px;
         object-fit: cover;
         filter:  drop-shadow(2px 4px 6px #575757);
     }
 `;
 
 export const StyledButtonWidth = styled.div`
-    width: 160px;
+    width: 680px;
     margin: 0 auto;
 `;
 

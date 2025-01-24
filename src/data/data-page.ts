@@ -51,7 +51,7 @@ export const dataAboutMeExperience: AboutMeExperienceType = {
     subtitle: 'About me',
     title: "My name is Viktoriia Rudneva",
     description: 'I am a dedicated and success-oriented',
-    description2: ' Front-end Developer with over one year\n' +
+    description2: ' Front-end Developer with two year\n' +
         'of professional experience at For Better Future Software House.',
     description3: ' I have skills in web and e-commerce development, specializing in React and using additional' +
         ' technologies such as Typescript and Gatsby to enhance the project functionality. I also have experience with Magento 2.\n' +
