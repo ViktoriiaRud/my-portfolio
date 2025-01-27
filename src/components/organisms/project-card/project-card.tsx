@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import Button from '../../atoms/button';
 import Container from '../../atoms/container';
 import {
@@ -24,6 +23,9 @@ import {ProjectCardType} from "../../../types/components";
 
 const ProjectCard = ({contentCard}:ProjectCardType) => {
     const [isShown, setIsShown] = useState<number | null>(null);
+
+
+
     return (
         <WrapperProjectCard id={'portfolio'}>
             <Container>

@@ -15,6 +15,7 @@ export const StyledWrapperCard = styled.div`
 
     ${breakpoint.lg} {
         max-width: 1986px;
+        background-color: ${({theme}) => theme.colors.blue};
     }
 `;
 

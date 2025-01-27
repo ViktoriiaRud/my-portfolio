@@ -41,7 +41,7 @@ export const dataExperience: ExperienceType = {
 }
 
 export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
-    hrefButtonOne: '../CV_ViktoriiaRudneva-Front-end_Developer.pdf',
+    hrefButtonOne: '../CV-Viktoriia-Rudneva-Front-end-developer.pdf',
     titleButtonOne: 'Download CV',
     hrefButtonTwo: '/#portfolio',
     titleButtonTwo: 'Portfolio',

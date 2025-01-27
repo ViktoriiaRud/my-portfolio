@@ -67,6 +67,25 @@ export const dataProjectCard: {
                 srcImage: ProjectImg3,
                 altText: 'Trip',
             },
+
+            {
+                name: 'Restaurant',
+                title: 'Restaurant',
+                description: "I used CSS, XML, StyledComponents, React, TypeScript.",
+                titleButton: 'View Project',
+                hrefButton: 'https://restaraunt-seven.vercel.app',
+                srcImage: ProjectImg2,
+                altText: 'Restaurant',
+            },
+            {
+                name: 'Trip',
+                title: 'Trip',
+                description: "I used CSS, XML, StyledComponents, React",
+                titleButton: 'View Project',
+                hrefButton: 'https://trip-mu.vercel.app',
+                srcImage: ProjectImg3,
+                altText: 'Trip',
+            },
         ],
     },
 };
