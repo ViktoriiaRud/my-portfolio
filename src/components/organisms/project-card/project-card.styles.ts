@@ -15,7 +15,6 @@ export const StyledWrapperCard = styled.div`
 
     ${breakpoint.lg} {
         max-width: 1986px;
-        background-color: ${({theme}) => theme.colors.blue};
     }
 `;
 
@@ -45,6 +44,9 @@ export const Card = styled.div`
     min-height: 420px;
     background-color: ${({theme}) => theme.colors.grayCard};
     margin-bottom: 40px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
 `;
 
 export const StyledContentCard = styled.div`
