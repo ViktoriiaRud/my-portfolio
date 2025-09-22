@@ -133,9 +133,5 @@ export const dataContact: ContactType = {
             url: 'https://t.me/ViktoriiaRudneva_pl',
             icon: 'telegram',
         },
-        {
-            url: 'https://www.facebook.com/rudnevaviktoriia',
-            icon: 'facebook',
-        },
     ],
 };
