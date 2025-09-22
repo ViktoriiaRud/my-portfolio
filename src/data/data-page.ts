@@ -1,15 +1,16 @@
+import BannerImgWork from '../assets/image-background/pexels1.jpg';
+import AboutMeExperienceImg from '../assets/image/myPhoto.png';
+import ImgExperience from '../assets/image/pexels-mizunokozuki-12899196.jpg';
+import myLogo from "../assets/logo/logo-new/logo.png";
 import {
-    AboutMeExperienceType, ContactType,
+    AboutMeExperienceType,
     BannerWorkType,
     ButtonDoubleBlueType, ContactFormType,
+    ContactType,
     ExperienceType,
     IconSkillsTooltipType
 } from "../types/components";
-import ImgExperience from '../assets/image/pexels-mizunokozuki-12899196.jpg';
-import AboutMeExperienceImg from '../assets/image/myPhoto.png';
-import {MenuType} from "../types/header";
-import BannerImgWork from '../assets/image-background/pexels1.jpg';
-import myLogo from "../assets/logo/logo-new/logo.png";
+import { MenuType } from "../types/header";
 
 
 export const dataExperience: ExperienceType = {
@@ -36,7 +37,7 @@ export const dataExperience: ExperienceType = {
 }
 
 export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
-    hrefButtonOne: '../CV-Viktoriia-Rudneva-Front-end-developer.pdf',
+    hrefButtonOne: '../CV - ViktoriiaRudnevaFrontendDeveloper.pdf',
     titleButtonOne: 'Download CV',
     hrefButtonTwo: '/#portfolio',
     titleButtonTwo: 'Portfolio',
@@ -45,13 +46,10 @@ export const dataButtonDoubleBlue: ButtonDoubleBlueType = {
 export const dataAboutMeExperience: AboutMeExperienceType = {
     subtitle: 'About me',
     title: "My name is Viktoriia Rudneva",
-    description: 'I am a dedicated and success-oriented',
-    description2: ' Front-end Developer with two year\n' +
-        'of professional experience at For Better Future Software House.',
-    description3: ' I have skills in web and e-commerce development, specializing in React and using additional' +
-        ' technologies such as Typescript and Gatsby to enhance the project functionality. I also have experience with Magento 2.\n' +
-        'I gained valuable experience as a freelance developer by developing two single-page websites (landing pages) before joining the company.',
-    description4: 'I strive to stay current with industry trends and continually expand my skills to effectively contribute to dynamic development projects.',
+    description: 'I am Frontend Developer with',
+    description2: ' 3+ years of experience ',
+    description3: 'in modern web technologies. I have experience working for a company For Better Future Software House.',
+    description4: 'I specialize in JavaScript, React, TypeScript, Gatsby, Next.js, Styled-components, Tailwind CSS, Figma, and Magento 2. Successfully delivered multiple client projects, improving performance and user experience. Experienced in teamwork and agile development methodologies.',
     srcImage: AboutMeExperienceImg,
     altText: 'AboutMe',
 }
